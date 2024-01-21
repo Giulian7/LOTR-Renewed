@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Domination",
+        "victoryScreenHeader": "Destroy all enemies\nto win!",
+        "milestones": ["Destroy all players"],
+        "victoryString": "The world has been convulsed by war. Many great and powerful civilizations have fallen, but you have survived - and emerged victorious! The world will long remember your glorious triumph!",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    {
+        "name": "Chaos Victory",
+        "hiddenInVictoryScreen": false,
+        "victoryScreenHeader": "Build The Temple\nBuild The Godor Godorath",
+        "milestones": ["Build [The Temple]","Build [The Godor Godorath]"],
+        "victoryString": "Insert text here",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    /*{
+        "name": "Armony Victory",
+        "hiddenInVictoryScreen": false,
+        "victoryScreenHeader": "Build the Temple of Melian\nBuild The Light Trees",
+        "milestones": ["Build [Temple of Melian]","Build [The Light Trees]"],
+        "victoryString": "Insert text here",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },*/
+    /*{
+        "name":"Diplomatic",
+        "hiddenInVictoryScreen":true,
+        "milestones":[""]
+    },*/
+    {
+        "name": "Time",
+        "hiddenInVictoryScreen": true,
+        "milestones": ["Have highest score after max turns"],
+        "victoryString": "The world has been convulsed by war. Many great and powerful civilizations have fallen, but you have survived - and emerged victorious! The world will long remember your glorious triumph!",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    }
+]

@@ -1,0 +1,55 @@
+[
+	//Science
+	{
+		"name":"Researcher",
+		"science":3,
+		"greatPersonPoints": {"Great Scientist":3},
+		"color": [0,0,255]
+	},
+	{
+		"name":"Scholar",
+		"science":2,
+		"greatPersonPoints": {"Great Scientist":2},
+		"color": [0,0,180]
+	},
+	//Production
+	{
+		"name":"Engineer",
+		"production":3,
+		"greatPersonPoints": {"Great Scientist":3},
+		"color": [139,69,19]
+	},
+	{
+		"name":"Craftsman",
+		"production":2,
+		"greatPersonPoints": {"Great Engineer":1},
+		"color": [106,49,8]
+	},
+	//Culture
+	{
+		"name":"Administrator",
+		"gold":1,
+		"culture":2,
+		"greatPersonPoints": {"Great Administrator":2},
+		"color": [200,150,0]
+	},
+	{
+		"name":"Poet",
+		"culture":2,
+		"greatPersonPoints": {"Great Artist":2},
+		"color": [160,32,240]
+	},
+	{
+		"name":"Sculptor",
+		"culture":3,
+		"greatPersonPoints": {"Great Artist":1},
+		"color": [120,23,170]
+	},
+	//Gold
+	{
+		"name":"Merchant",
+		"gold":4,
+		"greatPersonPoints": {"Great Merchant":3},
+		"color": [255,215,0]
+	}
+]

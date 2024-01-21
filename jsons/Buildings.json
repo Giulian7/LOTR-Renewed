@@ -1,0 +1,873 @@
+[
+	//LANGUAGES
+	{
+		"name": "Black Speech",
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <after adopting [Dark Culture]>",
+			"Provides [2] [Evil Force I]"
+		],
+		"cost": 2
+	},
+	{
+		"name": "Orkish",
+		"uniqueTo": "Orcs",
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <after adopting [Dark Culture]>",
+			"+[15]% combat bonus for units fighting in [Corruption]"
+		],
+		"cost": 2
+	},
+	{
+		"name": "Westron",
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <after adopting [Men Culture]>",
+			"[-15]% Culture cost of natural border growth [in all cities]"
+		],
+		"cost": 5
+	},
+	{
+		"name": "Rohirric",
+		"uniqueTo": "Rohan",
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <after adopting [Men Culture]>"
+		],
+		"cost": 3
+	},
+	{
+		"name": "Sindarin",
+		"uniqueTo": "Sindar Elves",
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <after adopting [Elven Culture]>"
+		],
+		"cost": 3
+	},
+	{
+		"name": "Noldorin",
+		"uniqueTo": "Noldor Elves",
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <after adopting [Elven Culture]>",
+			"[+15]% combat bonus for units fighting in [Friendly Land]",
+			"[+25]% Strength <for [All] units> <vs [Mordor] units>"
+		],
+		"cost": 3
+	},
+	{
+		"name": "Khuzdul",
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <after adopting [Dwarven Culture]>",
+			"[+2 Culture, +4 Gold]"
+		],
+		"cost": 3
+	},
+	{
+		"name": "Certhas-Angerthas Runes",
+		"requiredTech": "Writing",
+		"isWonder": true,
+		"uniques": [
+			"Only available <in cities without a [Feanorian Characters]>",
+			"[+1 Culture] Per [3] Population in this city"
+		],
+		"cost": 3
+	},
+	{
+		"name": "Feanorian Characters",
+		"requiredTech": "Writing",
+		"isWonder": true,
+		"uniques": [
+			"Only available <in cities without a [Certhas-Angerthas Runes]>",
+			"[+1 Science] Per [3] Population in this city"
+		],
+		"cost": 3
+	},
+	//		WONDERS
+	{
+		"name":"Stone of Erech",
+		"isWonder": true,
+		"cost": 80,
+		"uniques":[
+			"When declaring friendship, both parties gain a [50]% boost to great person generation"
+		],
+		"requiredTech": "Navigation"
+	},
+	{
+		"name":"Pits of Utumno",
+		"uniqueTo": "Mordor",
+		"isNationalWonder": true,
+		"cost":25,
+		"uniques": [
+			"[-5 Happiness] <before adopting [Dark Culture]>",
+			"Provides [2] [Evil Force I]",
+			"[+15]% Production when constructing [Land] units [in this city] <after adopting [Dark Culture]>"
+		],
+		"civilopediatext":[
+			{
+				"text":"Wiki",
+				"link":"https://lotr.fandom.com/wiki/Utumno"
+			}
+		]
+	},
+	{
+		"name": "Elostirion & the Tower Hills",
+		"isWonder": true,
+		"cost": 80,
+		"uniques": [
+			"Gain a free [Observatory] [in this city]",
+			"[+2 Culture]",
+			"Free [Palantir] appears"
+		],
+		"requiredTech": "Astronomy",
+		"quote":"---",
+		"civilopediatext":[
+			{
+				"image":"WonderImages/Elostirion & the Tower Hills"
+			},
+			{
+				"text":"Wiki",
+				"link":"https://lotr.fandom.com/wiki/Tower_Hills"
+			}
+		]
+	},
+	{
+		"name": "Durin's Doors",
+		"uniqueTo": "Durin's Dwarves",
+		"uniques": [
+			"Cultural Identity",
+			"[+3 Culture]",
+			"Only available <with [Ithildin]>",
+			"[+35] City Strength"
+		],
+		"requiredTech":"Stone Working",
+		"quote":"---",
+		"civilopediatext":[
+			{
+				"image":"WonderImages/Durin's Doors"
+			},
+			{
+				"text":"Wiki",
+				"link":"https://tolkiengateway.net/wiki/Doors_of_Durin"
+			}
+		]
+	},
+	{
+		"name": "Argonath",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Administrator": 2
+		},
+		"uniques": [
+			"[+3 Culture, +1 Happiness, +2 Faith]",
+			"[+25]% Great Person generation [in all cities]"
+		],
+		"requiredTech": "Gears and Mechanic",
+		"quote":"---",
+		"civilopediatext":[
+			{
+				"image":"WonderImages/Argonath"
+			},
+			{
+				"text":"Wiki",
+				"link":""
+			}
+		]
+	},
+	{
+		"name": "Dome of Stars",
+		"uniqueTo":"Gondor",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Artist": 2
+		},
+		"uniques": [
+			"[+1 Culture]",
+			"[+50]% [Culture] [in all cities]"
+		],
+		"requiredTech": "Astronomy",
+		"civilopediatext":[
+			{
+				"text":"Wiki",
+				"link":""
+			}
+		]
+	},
+	{
+		"name": "White Tower of Ecthelion",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Artist": 1
+		},
+		"uniques": [
+			"[+1 Culture]",
+			"[-10]% Unhappiness from [Population] [in all cities]",
+			"Free [Palantir] appears",
+			"Only available <after adopting [Men Culture]>"
+		],
+		"requiredTech": "Construction",
+		"quote":"---",
+		"civilopediatext":[
+			{
+				"text":"Wiki",
+				"link":""
+			}
+		]
+	},
+	{
+		"name": "Amon Sul",
+		"greatPersonPoints": {
+			"Great Administrator": 2,
+			"Great General":1
+		},
+		"isWonder": true,
+		"uniques": [
+			"Only available <within [2] tiles of a [Mountain]>",
+			"[+1 Culture, +4 Happiness]",
+			"Empire enters golden age",
+			"Free [Palantir] appears"
+		],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Meduseld",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Engineer": 2,
+			"Great General":1
+		},
+		"uniques": [
+			"[+3 Culture, +1 Faith]",
+			"+[15]% combat bonus for units fighting in [Friendly Land]"
+		],
+		"requiredTech": "Gears and Mechanic"
+	},
+	{
+		"name": "Dol Guldur",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques": [
+			"[+1 Culture]",
+			"[-25]% Culture cost of natural border growth [in all cities]",
+			"[-25]% Gold cost of acquiring tiles [in all cities]"
+		],
+		"requiredTech": "Chivalry"
+	},
+	{
+		"name": "Temple of Melian",
+		"isWonder": true,
+		"cost": 185,
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques": [
+			"[+1 Culture, +4 Faith]",
+			"[+10]% [Food] [in all cities]",
+			"[+15]% Production when constructing [Ranged] units [in all cities]"
+		],
+		"requiredTech": "Forestry"
+	},
+	{
+		"name": "The Temple",
+		"isWonder": true,
+		"cost": 185,
+		"uniques": [
+			"Only available <with [Evil Force I]>",
+			"[+1 Culture, +4 Faith]",
+			"[-10]% [Food] [in all cities]",
+			"[+35]% Production when constructing [Ranged] units [in this city]"
+		],
+		"requiredTech": "Forestry",
+		"quote":"But he that is their master shall yet prevail, and he will deliver you from this phantom; and his name is Melkor, Lord of All, Giver of Freedom, and he shall make you stronger than they.",
+		"civilopediatext":[
+			"'It is he whose name is not now spoken; for the Valar have deceived you concerning him, putting forward the name of Eru, a phantom devised in the folly of their hearts, seeking to enchain Men in servitude to themselves. For they are the oracle of this Eru, which speaks only what they will. But he that is their master shall yet prevail, and he will deliver you from this phantom; and his name is Melkor, Lord of All, Giver of Freedom, and he shall make you stronger than they.'\n—Sauron to Ar-Pharazôn, The Silmarillion, Akallabêth"
+		]
+	},
+	{
+		"name": "Alqualondë",
+		"greatPersonPoints": {
+			"Great Merchant": 1
+		},
+		"isWonder": true,
+		"uniques": [
+			"[+2 Culture, +4 Gold]",
+			"Only available <after adopting [Elven Culture]>",
+			"Must be next to [Coast]",
+			"Gain a free [Harbor] [in this city]",
+			"[+1 Gold] from [Water] tiles [in this city]"
+		],
+		"requiredTech": "Sailing"
+	},
+	{
+		"name": "Nargothrond",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques":["[+5 Culture, +2 Food]", "[+15]% City Strength from defensive buildings"],
+		"requiredTech": "Calendar"
+	},
+	{
+		"name": "The Great Archive",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Scientist": 1
+		},
+		"requiredTech": "Writing",
+		"uniques": [
+			"[+1 Culture, +2 Science]",
+			"Free Technology",
+			"Gain a free [Library] [in this city]"
+		]
+	},
+	{
+		"name": "Orthanc",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques": [
+			"[+1 Culture, +4 Happiness]",
+			"[+50]% Golden Age length",
+			"Free [Palantir] appears"
+		],
+		"requiredTech": "Metallurgy"
+	},
+	{
+		"name": "The Deeping Wall",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques": [
+			"[+3 Culture]",
+			"Must have an owned [Helm's Deep] within [2] tiles",
+			"Enemy [Land] units must spend [1] extra movement points when inside your territory",
+			"Gain a free [Walls] [in this city]"
+		],
+		"requiredTech": "Infrastructures"
+	},
+	{
+		"name": "Minas Anor",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Merchant": 1
+		},
+		"uniques": [
+			"[+1 Culture, +3 Gold, +2 Happiness]",
+			"[+18]% [Gold] from Trade Routes",
+			"Gain a free [Citadel] [in this city]",
+			"Must have an owned [Mountain] within [1] tiles",
+			"Can only be built without [Minas Ithil]"
+		],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Minas Ithil",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Artist": 1
+		},
+		"uniques": [
+			"[+1 Culture, +3 Gold, +2 Happiness]",
+			"[+25]% Culture",
+			"All newly-trained [relevant] units [in this city] receive the [Drill I] promotion",
+			"Gain a free [Citadel] [in this city]",
+			"Must have an owned [Mountain] within [1] tiles",
+			"Can only be built without [Minas Anor]"
+		],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Minas Morgul",
+		"uniqueTo": "Mordor",
+		"cost": 100,
+		"uniques": [
+			"[+1 Culture, +5 Gold, -6 Happiness]",
+			"Only available <with [Evil Force I]>",
+			"Only available <if [Minas Ithil] is constructed>"
+		]
+	},
+	{
+		"name": "The Mirror of Galadriel",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Scientist": 1
+		},
+		"uniques": [
+			"[+3 Culture, +1 Science]",
+			"Free Social Policy"
+		],
+		"requiredTech": "Astronomy"
+	},
+	{
+		"name": "Menegroth",
+		"isWonder": true,
+		"greatPersonPoints": {
+			"Great Administrator": 1
+		},
+		"uniques": [
+			"[+3 Culture, +1 Gold]",
+			"[+50] City Strength",
+			"[+20]% City Strength from defensive buildings <with [0] to [0] neighboring [Road] tiles>"
+		],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Formenos",
+		"isWonder": true,
+		"greatPersonPoints": {"Great Engineer": 1},
+
+		"uniques": [
+			"[+1 Culture, +2 Science]",
+			"[-25]% tile improvement construction time",
+			"[2] free [Worker] units appear"],
+		"requiredTech": "Mathematics",
+		"civilopediatext":[
+			{
+				"image":"WonderImages/Formenos"
+			}
+		]
+	},
+	{
+		"name": "Gondolin",
+		"culture": 1,
+		"greatPersonPoints": {"Great Scientist": 1},
+		"isWonder": true,
+		"uniques": [
+			"[+1 Culture]",
+			"Provides a sum of gold each time you spend a Great Person",
+			"[+2 Gold] from [Marble] tiles in this city",
+			"[+2 Gold] from [Stone] tiles in this city"],
+		"requiredTech": "Stone Working"
+	},
+	{
+		"name": "Angband",
+		"isWonder": true,
+		"uniques": [
+			"[+2 Production]",
+			"[+15]% Strength <for [All] units> <vs cities> <when attacking>"
+		],
+		"requiredTech": "Metallurgy"
+	},
+	{
+		"name": "Caras Galadhon",
+		"isWonder": true,
+		"greatPersonPoints": {"Great Artist": 1},
+		"uniques":[
+			"[+3 Culture, +2 Production, +3 Happiness]"
+		],
+		"requiredTech": "Construction"
+	},
+	// 	--	--	--	--	--	--	--GOLD--	--	--	--	--	--	--	--
+	{	"name": "Market",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Currency"
+	},
+	{	"name": "Bank",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"gold": 25},
+		"requiredBuilding": "Market",
+		"requiredTech": "Banking"
+	},
+	//	--	--	--	SCIENCE	--	--	--	--
+	{	"name": "Observatory",
+		"cost": 50,
+		"uniques": [
+			"[+2 Science]",
+			"[+1 Happiness]",
+			"[+1 Happiness] <after adopting [Elven Culture]>"
+		],
+		"requiredTech": "Astronomy"
+	},
+	{	"name": "Library",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"specialistSlots": {
+			"Scholar": 1
+		},
+		"uniques": [
+			"[+1 Science] Per [3] Population in this city"
+		],
+		"requiredTech": "Writing"
+	},
+	{	"name": "University",
+		"maintenance": 2,
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 33},
+		"specialistSlots": {"Scholar": 2},
+		"requiredBuilding": "Library",
+		"uniques": [
+			"[+1 Science] from [Vegetation] tiles in this city"
+		],
+		"requiredTech": "Natural Studies"
+	},
+    //	CULTURE
+	{	"name": "Monument",
+		"culture": 2,
+		"specialistSlots": {
+			"Poet": 1
+		},
+		"cost": 45,
+		"hurryCostModifier": 40,
+		"maintenance": 1
+	},
+	{	"name": "Barrow",
+		"replaces": "Monument",
+		"uniqueTo": "Arnor",
+		"specialistSlots": {
+			"Sculptor": 1,
+			"Poet": 1
+		},
+		"culture": 3,
+		"cost": 45,
+		"hurryCostModifier": 40,
+		"maintenance": 0
+	},
+	{
+		"name":"Skald Hall",
+		"cost": 50,
+		"uniques":[
+			"Only available <after adopting [Dwarven Culture]>",
+			"Consumes [1] [Wood]",
+			"[+2 Happiness]",
+			"[+1 Culture, +1 Faith] from all [Stone Graves] buildings"
+		]
+	},
+    //	HAPPINESS
+	{	"name": "Circus",
+        "requiredNearbyImprovedResources": [
+            "Ivory",
+            "Horses"
+        ],
+        "happiness": 2,
+        "hurryCostModifier": 25,
+        "requiredTech": "Trapping"
+    },
+    //		FOOD
+    {	"name": "Granary",
+        "maintenance": 1,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "[+2 Food]",
+            "[+1 Food] from [Deer] tiles in this city",
+            "[+1 Food] from [Wheat] tiles in this city"
+        ],
+        "requiredTech": "Clay Manufacturing"
+    },
+	{	"name": "Seafood Store",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+2 Food]",
+			"[+1 Food] from [Fish] tiles in this city",
+			"[+1 Food] from [Clamp] tiles in this city"
+		],
+		"requiredTech": "Clay Manufacturing"
+	},
+	{	"name": "Lighthouse",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must be next to [Coast]",
+			"[+1 Food] from [Ocean] tiles in this city",
+			"[+1 Food] from [Coast] tiles in this city",
+			"[+1 Food] from [Fish] tiles in this city"
+		],
+		"requiredTech": "Sailing"
+	},
+	{	"name": "Aqueduct",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+            "[40]% Food is carried over after population increases [in this city]"
+        ],
+		"requiredTech": "Construction"
+	},
+	//PRODUCTION
+	{	"name": "Water Mill",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+2 Food, +1 Production]",
+			"Must be on [River]"
+		],
+		"requiredTech": "The Wheel"
+	},
+	{	"name": "Workshop", 
+		"maintenance": 2,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"uniques":[
+			"[+2 Production]",
+			"[+10]% [Production]"
+		],
+		"requiredTech": "Metal Casting"
+	},
+	{	"name": "Forge",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"specialistSlots": {"Craftsman": 1},
+		"requiredNearbyImprovedResources": ["Iron", "Copper", "Gold Ore"],
+		"uniques": [
+			"[+15]% Production when constructing [Land] units [in this city]",
+			"[+1 Production] from [Iron] tiles in this city",
+			"[+1 Production] from [Copper] tiles in this city",
+			"[+1 Production] from [Gold Ore] tiles in this city"
+		],
+        "requiredTech": "Metal Casting"
+	},
+    {	"name": "Harbor",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+            "Must be next to [Coast]",
+			"Connects trade routes over water",
+            "[+1 Production] from [Water resource] tiles in this city"
+		],
+		"requiredTech": "Sailing"
+	},
+	{	"name": "Seaport",
+		"maintenance": 3,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Harbor",
+		"uniques": [
+			"Must be next to [Coast]",
+            "[+1 Production, +1 Gold] from [Water resource] tiles in this city",
+			"[+15]% Production when constructing [Water] units [in this city]"
+		],
+		"requiredTech": "Navigation"
+	},
+    {	"name": "Windmill",
+		"production": 2,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"uniques": [
+            "Must not be on [Hill]",
+            "[10]% Production when constructing [Buildings] buildings [in this city]"
+        ],
+		"requiredTech": "Gears and Mechanic"
+	},
+	//	MILITARY
+	{	"name": "Walls",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Clay Manufacturing"
+	},
+	{	"name": "Black Ice Walls",
+		"replaces": "Walls",
+		"uniqueTo": "Angmar",
+		"Science": 1,
+		"cityStrength": 6,
+		"cityHealth": 100,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Stone Working"
+	},
+	{	"name": "Barracks",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": [
+			"New [Military] units start with [15] Experience [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Metallurgy"
+	},
+	/*{	"name": "Citadel",
+		"replaces": "Fortress",
+		"maintenance": 2,
+		"cityHealth": 95,
+		"cost": 145,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Only available <after adopting [Men Culture]>",
+			"[+1 Culture]",
+			"[+50] City Strength",
+			"[+15]% City Strength from defensive buildings"
+		],
+		"requiredTech": "Construction"
+	},*/
+	{	"name": "Citadel",
+		"maintenance": 2,
+		"cityHealth": 75,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+20]% City Strength from defensive buildings <with a garrison>",
+			"[+50] City Strength"
+		],
+		"requiredTech": "Construction"
+	},
+	/*{	"name": "Castle",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Chivalry"
+	},*/
+	{	"name": "Armory",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredBuilding": "Barracks",
+		"uniques": [
+			"New [Military] units start with [25] Experience [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Clay Manufacturing"
+	},
+	{	"name": "Barricade",
+		"replaces": "Citadel",
+		"uniqueTo": "Mordor",
+		"cityStrength": 3,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"uniques": ["Free [Barricade Archer] appears"],
+		"requiredTech": "Chivalry"
+	},
+	{
+		"name":"Gun Armory",
+		"uniques":[
+			"Unlocks Gunman units",
+			"Consumes [1] [Niter]",
+			"Consumes [1] [Coal]"
+		],
+		"requiredTech":"Alchemy"
+	},
+	//	--	--RESOURCE SPECIFIC
+	{	"name": "Stable",
+		"maintenance": 1,
+		"requiredNearbyImprovedResources": [
+			"Horses",
+			"Sheep",
+			"Cattle"
+		],
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+15]% Production when constructing [Mounted] units [in this city]",
+			"[+1 Production] from [Cattle] tiles in this city",
+			"[+1 Production] from [Horses] tiles in this city",
+			"[+1 Production] from [Sheep] tiles in this city"
+		],
+		"requiredTech": "Horseback Riding"
+	},
+	{	"name": "Mearas Stable", 
+		"replaces": "Stable",
+		"uniqueTo": "Rohan",
+		"specialistSlots": {"Craftsman": 1},
+		"requiredNearbyImprovedResources": [
+            "Horses",
+            "Sheep",
+            "Cattle"
+        ],	
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+2 Gold, +1 Production]",
+			"[+15]% Production when constructing [Mounted] units [in this city]", 
+			"[+1 Production] from [Cattle] tiles in this city",
+			"[+1 Production] from [Horses] tiles in this city",
+			"[+1 Production] from [Sheep] tiles in this city"
+		],
+		"requiredTech": "Horseback Riding"
+	},
+	{	"name": "Mint",
+		"maintenance": 0,
+		"requiredNearbyImprovedResources": [
+			"Gold Ore",
+			"Silver",
+			"Copper"
+		],
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+3 Gold] from [Gold Ore] tiles [in this city]",
+			"[+2 Gold] from [Silver] tiles [in this city]",
+			"[+1 Gold] from [Copper] tiles [in this city]"
+		],
+		"requiredTech": "Currency"
+	},
+	{	"name": "Garden",
+        "maintenance": 1,
+		"cost": 120,
+		"hurryCostModifier": 25,
+		"uniques": [
+            "[+25]% Great Person generation [in this city]",
+            "Must be next to [Fresh water]"
+        ],
+		"requiredTech": "Philosophy"
+	},
+	{	"name": "Stone Works",
+		"happiness": 1,
+		"production": 1,
+		"specialistSlots": {
+			"Sculptor": 1
+		},
+		"requiredNearbyImprovedResources": [
+			"Marble",
+			"Stone"
+		],
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"[+1 Production] from [Stone] tiles in this city",
+			"[+1 Production] from [Marble] tiles in this city"
+		],
+		"requiredTech": "Stone Working"
+	},
+	//faith
+	{
+		"name":"Shrine",
+		"faith":1,
+		"requiredTech":"Clay Manufacturing"
+	},
+	{	"name": "Temple",
+		"culture": 3,
+		"specialistSlots": {"Poet": 1},
+		"requiredBuilding": "Monument",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Philosophy"
+	},
+	{	"name": "Monastery",
+		"specialistSlots": {"Sculptor": 1},
+		"maintenance": 0,
+		"hurryCostModifier": 25,
+		"uniques": [
+            "[+2 Culture] from [Wine] tiles in this city",
+            "[+2 Culture] from [Incense] tiles in this city"
+        ],
+		"requiredTech": "Philosophy"
+	},
+	//NATIONAL
+	{	"name": "Palace",
+		"isNationalWonder": true,
+		"specialistSlots": {
+			"Sculptor": 1,
+			"Administrator": 1
+		},
+		"cityStrength": 2,
+		"cost": 1,
+		"uniques": [
+			"[+1 Culture, +2 Science, +2 Gold, +2 Production]",
+			"[-20]% Culture cost of adopting new Policies",
+			"[+25]% [Culture] [in this city]",
+			"Indicates the capital city"
+		]
+	}
+]

@@ -1,0 +1,40 @@
+{
+    isBaseRuleset: true,
+    modUrl: "https://github.com/Giulian7/LOTR-Unciv",
+    author:Giulian7,
+	topics: [unciv-mod,unciv-mod-rulesets,lotr],
+    constants: {
+        maxXPfromBarbarians:30,//Int
+        naturalWonderCountMultiplier:0.260,//Float
+        naturalWonderCountAddedConstant:0.23,//Float
+    }
+}
+
+/*DEF
+maxXPfromBarbarians:30,//Int
+cityStrengthBase:8.0,//Float
+cityStrengthPerPop:0.4,//Float
+cityStrengthFromTechsMultiplier:5.5,//Float
+cityStrengthFromTechsExponent:2.8,//Float
+cityStrengthFromTechsFullMultiplier:1.0,//Float
+cityStrengthFromGarrison:0.2,//Float
+unitSupplyPerPopulation:0.5,//Float
+minimalCityDistance:3,//Int
+minimalCityDistanceOnDifferentContinents:2,//Int
+naturalWonderCountMultiplier:0.124,//Float
+naturalWonderCountAddedConstant:0.1,//Float
+ancientRuinCountMultiplier:0.02,//Float
+maxLakeSize:10, //Int
+riverCountMultiplier:0.01,//Float
+minRiverLength:5,//Int
+maxRiverLength:666//Int
+unitUpgradeCost:{
+    base:10,//Float
+    perProduction:2,//Float
+    eraMultiplier:0,//Float
+    exponent:1,//Float	
+    roundTo:5//Int
+}
+/*Formula unitUpgradeCost:
+    max((base + perProduction * (new_unit_cost - old_unit_cost)), 0) * (1 + eraNumber * eraMultiplier) * civModifier ) ^ exponent
+*/

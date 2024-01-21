@@ -1,0 +1,450 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "First Age",
+		"techCost": 40,
+		"buildingCost": 40,
+		"wonderCost":70,
+		"techs": [
+			{
+				"name": "Music and Poetry",
+				"row": 6,
+				"quote": "There was Eru, the One, who in Arda is called Ilúvatar; and he made first the Ainur, the Holy Ones, that were the offspring of his thought, and they were with him before aught else was made. And he spoke to them, propounding to them themes of music; and they sang before him, and he was glad.",
+				"civilopediaText":[
+					{
+						"image":"ExtraImages/Ainulindale"
+					},
+					{
+						"text":"There was Eru, the One, who in Arda is called Ilúvatar; and he made first the Ainur, the Holy Ones, that were the offspring of his thought, and they were with him before aught else was made.\nAnd he spoke to them, propounding to them themes of music; and they sang before him, and he was glad.",
+					},
+					{
+						"text":"Wiki",
+						"link":"https://lotr.fandom.com/wiki/Ainur"
+					}
+				],
+				"uniques": [
+					"Starting tech"
+				]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "First Age",
+		"techCost": 70,
+		"buildingCost": 70,
+		"wonderCost":90,
+		"techs": [
+			{
+				"name": "Writing",
+				"row": 2,
+				"prerequisites": [
+					"Music and Poetry"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Forestry",
+				"row": 4,
+				"prerequisites": [
+					"Music and Poetry"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Animal Husbandry",
+				"row": 6,
+				"prerequisites": [
+					"Music and Poetry"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Clay Manufacturing",
+				"row": 8,
+				"prerequisites": [
+					"Music and Poetry"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Mining",
+				"row": 10,
+				"prerequisites": [
+					"Music and Poetry"
+				],
+				"quote": "--"
+			}
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "First Age",
+		"techCost": 120,
+		"buildingCost": 90,
+		"wonderCost": 220,
+		"techs": [
+			{
+				"name": "Astronomy",
+				"row": 2,
+				"prerequisites": [
+					"Writing",
+					"Forestry"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Sailing",
+				"row": 4,
+				"prerequisites": [
+					"Forestry"
+				],
+				"quote": "--",
+				"uniques": [
+					"Enables embarkation for land units"
+				]
+			},
+			{
+				"name": "Trapping",
+				"row": 5,
+				"prerequisites": [
+					"Animal Husbandry",
+					"Forestry"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Agriculture",
+				"row": 6,
+				"prerequisites": [
+					"Animal Husbandry"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "The Wheel",
+				"row": 7,
+				"prerequisites": [
+					"Animal Husbandry",
+					"Clay Manufacturing"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Stone Working",
+				"row": 9,
+				"prerequisites": [
+					"Mining"
+				],
+				"quote": "--"
+			}
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Second Age",
+		"techCost": 200,
+		"buildingCost": 120,
+		"wonderCost": 280,
+		"techs": [
+			{
+				"name": "Mathematics",
+				"row": 1,
+				"prerequisites": [
+					"Astronomy"
+				],
+				"uniques":["Roads connect tiles across rivers"],
+				"quote": "--"
+			},
+			{
+				"name": "Navigation",
+				"row": 4,
+				"uniques": [
+					"[+1] Movement <for [Embarked] units>"
+				],
+				"prerequisites": [
+					"Sailing",
+					"Astronomy"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Horseback Riding",
+				"row": 7,
+				"cost": 175,
+				"prerequisites": [
+					"Agriculture",
+					"The Wheel"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Construction",
+				"row": 9,
+				"prerequisites": [
+					"Stone Working",
+					"The Wheel"
+				],
+				"quote": "--",
+				"uniques": [
+					"Roads connect tiles across rivers"
+				]
+			},
+			{
+				"name": "Metallurgy",
+				"row": 10,
+				"prerequisites": [
+					"Mining"
+				],
+				"quote": "--"
+			}
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Second Age",
+		"techCost": 380,
+		"buildingCost": 140,
+		"wonderCost": 330,
+		"techs": [
+			{
+				"name": "Philosophy",
+				"row": 1,
+				"prerequisites": [
+					"Mathematics"
+				],
+				"uniques": [
+					"Enables conversion of city production to [Science]"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Calendar",
+				"row": 2,
+				"prerequisites": [
+					"Astronomy"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Natural Studies",
+				"row": 5,
+				"prerequisites": [
+					"Trapping",
+					"Agriculture"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Infrastructures",
+				"row": 7,
+				"prerequisites": [
+					"Horseback Riding",
+					"Construction"
+				],
+				"uniques": [
+					"Improves movement speed on roads"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Alloy",
+				"row": 10,
+				"prerequisites": [
+					"Metallurgy"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Currency",
+				"row": 11,
+				"prerequisites": [
+					"Metallurgy"
+				],
+				"quote": "--"
+			}
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Third Age",
+		"techCost": 650,
+		"buildingCost": 185,
+		"wonderCost": 450,
+		"techs": [
+			{
+				"name": "Civil Service",
+				"row": 1,
+				"prerequisites": [
+					"Philosophy"
+				],
+				"quote":"--"
+			},
+			{
+				"name": "Chivalry",
+				"row": 2,
+				"prerequisites": [
+					"Philosophy",
+					"Calendar"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Vessels Building",
+				"row": 4,
+				"prerequisites": [
+					"Navigation",
+					"Natural Studies"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Gears and Mechanic",
+				"row": 5,
+				"prerequisites": [
+					"Natural Studies"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Architecture",
+				"row": 9,
+				"prerequisites": [
+					"Construction"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Metal Casting",
+				"row": 10,
+				"prerequisites": [
+					"Alloy"
+				],
+				"quote": "--"
+			}
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Third Age",
+		"techCost": 1050,
+		"buildingCost": 235,
+		"wonderCost": 560,
+		"techs": [
+			{
+				"name": "Education",
+				"row": 1,
+				"prerequisites": [
+					"Civil Service"
+				],
+				"uniques": [
+					"Enables Research agreements"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Guilds",
+				"row": 2,
+				"prerequisites": [
+					"Chivalry",
+					"Civil Service"
+				],
+				"uniques": [
+					"Enables conversion of city production to [Gold]"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Alchemy",
+				"row": 6,
+				"prerequisites": [
+					"Natural Studies",
+					"Metal Casting"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Acoustics",
+				"row": 9,
+				"prerequisites": [
+					"Architecture",
+					"Metal Casting"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "Banking",
+				"row": 11,
+				"prerequisites": [
+					"Currency"
+				],
+				"quote": "--"
+			}
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Third Age",
+		"techCost": 1750,
+		"buildingCost": 270,
+		"wonderCost": 685,
+		"techs": [
+			{
+				"name": "Economics",
+				"row": 7,
+				"prerequisites": [
+					"Banking",
+					"Guilds",
+					"Infrastructures"
+				],
+				"quote": "--"
+			}
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Fourth Age",
+		"techCost": 3800,
+		"buildingCost": 375,
+		"wonderCost": 825,
+		"techs": [
+			{
+				"name": "The Future",
+				"row": 7,
+				"prerequisites": [
+					"Economics"
+				],
+				"uniques": [
+					"Who knows what the future holds?",
+					"Can be continually researched"
+				],
+				"quote": "--"
+			}
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Fourth Age",
+		"techCost": 3800,
+		"buildingCost": 375,
+		"wonderCost": 825,
+		"techs": [
+			{
+				"name": "Valar Knowledge",
+				"row": 1,
+				"prerequisites": [
+					"The Future"
+				],
+				"quote": "--"
+			},
+			{
+				"name": "The Black Powder",
+				"row": 3,
+				"prerequisites": [
+					"The Future"
+				],
+				"quote": "--"
+			}
+		]
+	}
+]

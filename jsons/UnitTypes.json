@@ -1,0 +1,75 @@
+[
+//CIV LIKE
+	{
+		"name": "Civilian",
+		"movementType": "Land"
+	},
+	{
+		"name": "Civilian Water",
+		"movementType": "Water"
+	},
+	{
+		"name": "Magical Object",
+		"movementType":"Land",
+		"uniques":["All tiles cost 1 movement","May enter foreign tiles without open borders"]
+	},
+//LAND
+	{
+		"name": "Scout",
+		"movementType": "Land",
+		"uniques":["[2] Sight <in [Watchtower] tiles>"]
+	},
+	{
+		"name": "Melee",
+		"movementType": "Land",
+		"uniques":["[1] Sight <in [Watchtower] tiles>"]
+	},
+	{
+		"name": "Ranged",
+		"movementType": "Land",
+		"uniques":["[1] Sight <in [Watchtower] tiles>"]
+	},
+	{
+		"name": "Mounted",
+		"movementType": "Land"
+	},
+	{
+		"name": "Armor",
+		"movementType": "Land"
+	},
+	{
+		"name": "Siege",
+		"movementType": "Land",
+		"uniques":["Destroys tile improvements when attacking"]
+	},
+	{
+		"name": "Lizard",
+		"movementType":"Land"
+	},
+	{
+		"name":"Artrhopod",
+		"movementType":"Land"
+	},
+	{
+		"name":"Tree-Man",
+		"movementType":"Land",
+		"uniques":[
+			"Cannot attack <vs [Beloved by Nature] units>"
+		]
+	},
+//WATER
+	{
+		"name": "Melee Water",
+		"movementType": "Water",
+		"uniques": ["Can move after attacking"]		
+	},
+	{
+		"name": "Ranged Water",
+		"movementType": "Water"
+	},
+//AIR
+	{
+		"name":"Air",
+		"movementType":"Air"
+	}
+]

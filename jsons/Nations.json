@@ -1,0 +1,1220 @@
+[
+	//Spectator
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255],
+		"innerColor": [0,0,0]
+	},
+	//  --  --  --  --MEN--   --  --  --  --  --
+	{	"name": "Arnor",
+		"leaderName": "Elendil",
+		"style": "WestMen",
+		"adjective": [
+			"Arnorian"
+		],
+		"preferredVictoryType": "Scientific",
+
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "TBD",
+		"introduction": "Elendil of Arnor and his people sent you their best greetings.",
+
+		"declaringWar": "The Last Alliance declares war on you!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"afterPeace":"Finally you did something reasonable...",
+
+		"neutralHello": "Greetings.",
+		"neutralLetsHearIt":["...","Continue."],
+		"neutralNo":["No.","This does not benefit us at all.","I refuse."],
+		"neutralYes":["Beautiful!","I agree with you.","Wonderful!"],
+
+		"hateHello": "Yes?!",
+		"hateNo":["No!","Is there anything else?!","I will absolutely reject your offer."],
+		"hateYes":["Fine.","That will work for now."],
+		"hateLetsHearIt":["Hmph!","I don't care.","Speak up before you bore me."],
+
+		"tradeRequest": "Want to trade?",
+		"outerColor": [21,121,133],
+		"innerColor": [220,229,230],
+		"uniqueName": "Numenorean Inheritance",
+		"uniqueText": "-25% Culture cost of acquiring tiles in all cities, -25% Gold cost of acquiring tiles in all cities.",
+		"uniques": [
+			"Starts with [Men Culture] adopted",
+			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [98]% chance>",
+			"[-25]% Culture cost of natural border growth [in all cities]",
+			"[-25]% Gold cost of acquiring tiles [in all cities]"
+		],
+		"cities": [
+			"Annuminas",
+			"Amon Sul",
+			"Fornost",
+			"Rhudaur",
+			"Cardolan",
+			"Arthedain",
+			"Old Forest",
+			"Evendim",
+			"Nenuial",
+			"Tyrn Gothad",
+			"Tharbad",
+			"Norbury",
+			"Elostirion",
+			"Archet",
+			"Combe",
+			"Tharbad",
+			"Chetwood",
+			"Midgewater"
+		]
+	},
+	{	"name": "Gondor",
+		"leaderName": "Aragorn",
+		"adjective": [
+			"Gondorian"
+		],
+		"style": "WestMen",
+		"startBias": [
+			"Grassland"
+		],
+		"preferredVictoryType": "Scientific",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "TBD",
+		"introduction": "The people of Gondor greets you",
+
+		"declaringWar": "For the White City!",
+		"attacked": "I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		
+		"neutralHello": "Greetings!",
+		"hateHello": "What send you over there?!",
+		"tradeRequest": "I propose a fair exchange...",
+		"outerColor":[1,0,84],
+		"innerColor":[255,255,255],
+		"uniqueName": "For the White City!",
+		"uniqueText": "Workers improve tiles 25% faster, receive a free Worker when you discover Pottery",
+		"uniques":[
+			"Tile improvement speed +25%",
+			"Receive free [Worker] when you discover [Clay Manufacturing]",
+
+			"Starts with [Men Culture] adopted",
+			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [98]% chance>"
+		],
+		"cities":[
+			"Minas Tirith",
+			"Osgiliath",
+			"Ithilien",
+			"Cair Andros",
+			"Dol Amroth",
+			"Lamedon",
+			"Henneth Annun",
+			"Lossarnach",
+			"Lebennin",
+			"Anfalas",
+			"Belfalas",
+			"Morthond",
+			"Ringlo Vale",
+			"Andrast",
+			"Pelargir",
+			"Linhir",
+			"Tarnost",
+			"Ethring"
+		]
+	},
+	{	"name": "Rohan",
+		"leaderName": "Theoden",
+		"adjective": [
+			"Rohan"
+		],
+		"style": "WestMen",
+		"startBias": [
+			"Plains"
+		],
+		"preferredVictoryType": "Domination",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "",
+		"introduction": "Theoden in person send you his greetings along with his people at all.",
+
+		"declaringWar": "Muster the Rohirrim!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		
+		"neutralHello": "Greetings.",
+		"hateHello": "Yes?!",
+		"tradeRequest": "Are you willing to trade?",
+		"outerColor": [
+			2,
+			112,
+			11
+		],
+		"innerColor": [
+			224,
+			218,
+			157
+		],
+		"uniqueName": "Muster the Rohirrim!",
+		//"uniqueText": "Starts with Animal Husbandry. +1 Movement for all Mounted units, double quantity of Horses and Horses provide +1 Food.",
+		"uniques": [
+			"Starts with [Animal Husbandry]",
+			"[+1] Movement <for [Mounted] units>",
+			"Double quantity of [Horses] produced",
+			"[+1 Food] from every [Horses]",
+
+			"Starts with [Men Culture] adopted",
+			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [100]% chance>",
+			//"Free [Theoden] appears <upon entering the [Third Age]>"
+		],
+		"cities": [
+			"Edoras",
+			"Helm's Deep",
+			"Snowbourn",
+			"Aldburg",
+			"Dunharrow",
+			"Grimslade",
+			"Fords of Isen",
+			"Gap of Rohan",
+			"Eastemnet",
+			"Eastfold",
+			"Westemnet",
+			"Folde",
+			"Westfold",
+			"The Wold",
+			"West-March",
+			"Minhiriath",
+			"Meduseld",
+			"Framsburg"
+		]
+	},
+	{	"name": "Harad",
+		"leaderName": "Suladan",
+		"adjective": [
+			"Haradrim"
+		],
+		"startBias": [
+			"Desert"
+		],
+		"style":"EastMen",
+		"preferredVictoryType":"Domination",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "TBD",
+		"introduction": "...Strangers?...I'm Suladan, Grand Chief of the Harads... Beware, the desert can became your worst enemy",
+
+
+		"declaringWar": "Prepare for war!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"neutralHello": "Greetings!",
+		"hateHello": "Yes?!",
+		"tradeRequest": "My people have proposed an offer...",
+		"outerColor": [167,110,12],
+		"innerColor": [101,10,18],
+		"uniqueName": "Desert Tribes",
+		"uniqueText": "Receive triple Gold from Barbarian encampments and pillaging Cities. +1 Production and +1 Fodd from every Ivory and +2 Culture from each Oasis.",
+		"uniques": [
+			//"Gain a free [Harad Training Grounds] [in all cities]",
+			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [100]% chance>",
+			"Receive triple Gold from Barbarian encampments and pillaging Cities",
+			"[+1 Production, +1 Food] from every [Ivory]",
+			"[+2 Culture] from every [Oasis]"
+		],
+		"cities": [
+			"Harondor",
+			/*"Far Harad",
+			"Sunland",
+			"Sutherland",
+			"Sunlending",
+			"Harad",
+			"Haradwaith",*/
+			"Khand",
+			"Incanus",
+			"Harnen",
+			"Hasharin",
+			"Dalamyr",
+			"Karna",
+			"Badharkan",
+			"Hidar",
+			"Nafarat",
+			"Abrakan",
+			"Dharan"
+		]
+	},
+	{	"name": "Rhun",
+		"leaderName": "Khamul",
+		"adjective": [
+			"Easterling"
+		],
+		"style": "EastMen",
+		"startBias": [
+			"Plains",
+			"Desert"
+		],
+		"preferredVictoryType": "Cultural",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "",
+		"declaringWar": "Prepare for war!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"introduction": "Khamul the Easterling send you his greetings.",
+		"neutralHello": "Greetings.",
+		"hateHello": "Yes?!",
+		"tradeRequest": "Want to trade?",
+		"outerColor": [
+			161,
+			142,
+			21
+		],
+		"innerColor": [
+			110,
+			47,
+			2
+		],
+		"uniqueName": "Shadow of the East",
+		"uniqueText": "+1 Culture, +1 Gold, +1 Science from each Trade Route.",
+		"uniques": [
+			"[+1 Culture, +1 Gold, +1 Science] from each Trade Route",
+			"+[20]% combat bonus for units fighting in [Enemy Land]",
+			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [95]% chance>",
+			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [5]% chance>"
+		],
+		"cities": [
+			"Rhun",
+			"Sea of Rhun",
+			"Orocarni",
+			"Helcar",
+			"Hildorien",
+			"Balcoth",
+			"Romenor",
+			"Kalorme",
+			"Red Mountains",
+			"Brown Lands",
+			"Ninwi",
+			"Trui",
+			"East Lands",
+			"Ithrun Luin",
+			"Cuiviened",
+			"Rum"
+		]
+	},
+	//	--	--	--	--	--  ELF  --	--	--	--	--	--
+	{	"name": "Noldor Elves",
+		"leaderName": "Elrond",
+		"adjective": [
+			"Noldor",
+			"Grey Elves"
+		],
+		"style": "Elf",
+		"preferredVictoryType": "Domination",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "",
+		"declaringWar": "Prepare for war!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"introduction": "Hi traveler, I'm Elrond, welcome in my house",
+		"neutralHello": "Greetings.",
+		"hateHello": "Yes?!",
+		"tradeRequest": "I propose a fair exchange...",
+		"outerColor": [
+			235,
+			223,
+			91
+		],
+		"innerColor": [
+			36,
+			98,
+			102
+		],
+		"uniqueName": "Back from the Journey",
+		"uniqueText": "+20% great person generation in all cities.\n+1 Culture and +1 Gold from every specialist.",
+		"uniques": [
+			"Starts with [Construction]",
+			"Starts with [Metallurgy]",
+			"[20]% Great Person generation [in all cities]",
+			"[+1 Culture, +1 Gold] from every specialist [in all cities]",
+
+			"Starts with [Elven Culture] adopted",
+			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [97]% chance>",
+			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [2]% chance>",
+			"All newly-trained [Land] units [in all cities] receive the [Dwarf] promotion <with [1]% chance>"
+		],
+		"cities": [
+			"Rivendell",
+			"Imladris",
+			"Bruinen",
+			"Hithaeglir",
+			"Hollin",
+			"Ost-in-Edhil",
+			"Glad Ereg",
+			"Sirannon",
+			"Mirdam",
+			"Emun Naer",
+			"Mitheithel",
+			"Hoarwell",
+			"Glanduin",
+			"Nin-in-Eilp",
+			"Gath Ulor",
+			"Urugarth",
+			"Duvumen"
+		]
+	},
+	{	"name": "Sindar Elves",
+		"leaderName": "Thranduil",
+		"adjective": [
+			"Sindar"
+		],
+		"style": "Elf",
+		"startBias": [
+			"Forest",
+			"Plains",
+			"Grassland"
+		],
+		"preferredVictoryType": "Armony Victory",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "",
+		"declaringWar": "Prepare for war!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"introduction": "Thranduil of the sindar people sends you his regards",
+		"neutralHello": "Greetings.",
+		"hateHello": "Yes?!",
+		"tradeRequest": "Want to trade?",
+		"outerColor": [
+			4,156,152
+		],
+		"innerColor": [
+			247, 247, 247
+		],
+		"uniqueName": "Elven Grace",
+		"uniqueText": "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
+		"uniques": [
+			"Starts with [Elven Culture] adopted",
+			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [98]% chance>",
+			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [1]% chance>",
+			"Starts with [Forestry]"
+		],
+		"cities": [
+			"Emyn Duir",
+			"Eryn Lasgalen",
+			"Emyn-Nu-Fuin",
+			"Taun-Nu-Fuin",
+			"Gladden Fields",
+			"Taur-En-Daedelos",
+			"Langwell",
+			"East Blight",
+			"Greylin",
+			"Lindon",
+			"Langflood"
+		]
+	},
+	{	"name": "Nandor Elves",
+		"leaderName": "Elwe",
+		"adjective": [
+			"Silvan Elves",
+			"Green Elves"
+		],
+		"style": "Elf",
+		"startBias": [
+			"Forest"
+		],
+		"preferredVictoryType": "Armony & Chaos Victory",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "",
+		"declaringWar": "Prepare for war!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"introduction": "I am Thranduil!",
+		"neutralHello": "Greetings.",
+		"hateHello": "Yes?!",
+		"tradeRequest": "Want to trade?",
+		"outerColor": [
+			8,
+			46,
+			8
+		],
+		"innerColor": [
+			59,
+			138,
+			75
+		],
+		"uniqueName": "Elvess of the Forests",
+		"uniqueText": "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
+		"uniques": [
+			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [98]% chance>",
+			"Starts with [Elven Culture] adopted",
+			"Starts with [Forestry]",
+			"All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."
+		],
+		"cities": [
+			"Amon Lanc",
+			"Greenwood",
+			"Carrock",
+			"Eastern Mirkwood"
+		]
+	},
+	//	--	--	--	--	--DWARF--	--	--	--	--	--
+	{	"name": "Durin's Dwarves",
+		"leaderName": "Dain II",
+		"style": "Dwarven",
+		"adjective": [
+			"Durin's People",
+			"Longbeards"
+		],
+		"startBias": [
+			"Elevated"
+		],
+		"preferredVictoryType": "Cultural",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "",
+		"declaringWar": "You have been a problem for too long.",
+		"attacked": "I smell battle!",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"introduction": "Dain II, King Under the Mountain, greets you and your people.",
+		"neutralHello": "Greetings.",
+		"hateHello": "Yes?!",
+		"tradeRequest": "An exchange?",
+		"outerColor": [
+			219,
+			210,
+			75
+		],
+		"innerColor": [
+			89,
+			88,
+			74
+		],
+		"uniqueName": "Sons of Aule",
+		"uniqueText": "+1 Production and +1 Gold from Strategic resources. Double quantity of all mined resources.",
+		"uniques": [
+			"Starts with [Dwarven Culture] adopted",
+			"Starts with [Mining]",
+			"All newly-trained [Land] units [in all cities] receive the [Dwarf] promotion <with [99]% chance>",
+			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [1]% chance>",
+			"[+1 Production] from every [Strategic resource]",
+			"[+1 Gold] from every [Strategic resource]",
+			"Double quantity of [Salt] produced",
+			"Double quantity of [Silver] produced",
+			"Double quantity of [Gems] produced",
+			"Double quantity of [Gold Ore] produced",
+			"Double quantity of [Copper] produced",
+			"Double quantity of [Iron] produced"
+		],
+		"cities": [
+			"Khazad-dum",
+			"Erebor",
+			"Esgaroth",
+			"Ered Luin",
+			"Iron Hills",
+			"Belegost",
+			"Nogrod",
+			"Azanulbizar",
+			"Redhorn",
+			"Tumunhazar",
+			"Khazad Dum",
+			"Glittering Caves",
+			"Mount Dolmed",
+			"Silver Tooth",
+			"Fanuidhol",
+			"Anghabar",
+			"Amon Rudh",
+			"Mickleburg",
+			"Gabilgathol"
+		]
+	},
+	//	--	--	--	--	--MORGOTH--	--	--	--	--	--
+	{	"name": "Mordor",
+		"leaderName": "Sauron",
+		"adjective": [
+			"Mordor"
+		],
+		"style": "Evil",
+		"startBias": [
+			"Avoid Fresh Water"
+		],
+		"preferredVictoryType": "Domination",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "TBD",
+		"declaringWar": "You cannot hide. I see you. There is no life in the void, only death.",
+		"attacked": "This will be your last act...",
+		"defeated": "...",
+		"introduction": "Bow at the presence of the mighty Dark Lord of Mordor: the Black Master, Lord of The Ring",
+		"neutralHello": "...",
+		"hateHello": "Do I have to hear you?",
+		"tradeRequest": "The Dark Lord is asking you a tribute...",
+		"outerColor": [
+			107,
+			0,
+			0
+		],
+		"innerColor": [
+			207,
+			120,
+			0
+		],
+		"uniqueName": "Fellows of the Evil",
+		"uniques": [
+			"[Great General] is earned [50]% faster <with [Ring]>",
+			"Receive free [Great General] when you discover [Metallurgy]",
+			
+			"Cannot build [Civilian] units",
+
+			"Starts with [Dark Culture] adopted",
+
+			"Nullifies All Yield",
+			"May capture killed [Barbarian] units <with [50]% chance>"
+		],
+		"cities": [
+			"Barad Dur",
+			"Orodruin",
+			"Gorgoroth",
+			"Udun",
+			"Nurn",
+			"Dagorlad",
+			"Durthang",
+			"Cirith Gorgor",
+			"Ered Lithui",
+			"Ered Duath",
+			"Cirith Ungol",
+			"Morgul Pass",
+			"Black Gate",
+			"Nargroth",
+			"Morgai",
+			"Morannon",
+			"Seregost",
+			"Lithlad",
+			"Carach Angren"
+		]
+	},
+	{	"name": "Angmar",
+		"leaderName": "Witch-king",
+		"adjective": [
+			"Angmar"
+		],
+		"startBias": [
+			"Tundra"
+		],
+		"style": "Evil",
+		"preferredVictoryType": "Chaos Victory",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "TBD",
+		"declaringWar": "No man can defeat me!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"introduction": "Behold the King of Angmar, Terror of the North, Vassal of his majesty: Sauron.",
+		"neutralHello": "I listen you, for now...",
+		"hateHello": "Do I have to hear you?",
+		"tradeRequest": "An exchange?",
+		"outerColor": [
+			19,
+			38,
+			64
+		],
+		"innerColor": [
+			87,
+			123,
+			173
+		],
+		"uniqueName": "Terror of the North",
+		"uniqueText": "- All Melee units receive Siege I promotion\n- +1 Movement and +10% Stength for all units during Golden Ages.",
+		"uniques": [
+			"Starts with [Dark Culture] adopted",
+			"Cannot build [Civilian] units",
+			"[Melee] units gain the [Siege I] promotion",
+			"[+1] Movement <for [All] units> <during a Golden Age>",
+			"[+10]% Strength <for [All] units> <during a Golden Age>"
+		],
+		"cities": [
+			"Carn Dum",
+			"Angmar",
+			"Forodwaith",
+			"East Angmar",
+			"Northern Hills",
+			"Dor Daedeloth",
+			"Forochel",
+			"Malenhad",
+			"Nan Gurth",
+			"Gorothlad",
+			"Gundabad",
+			"Himbar",
+			"Urugarth",
+			"Aughaire"
+		]
+	},
+	{	"name": "Isengard",
+		"leaderName": "Saruman",
+		"adjective": [
+			"Isengard"
+		],
+		"style": "Evil",
+		"startBias": [
+			"Hill"
+		],
+		"preferredVictoryType": "Scientific",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "TBD",
+		"declaringWar": "A new power is rising!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"introduction": "Welcome stranger, welcome in the land of the Isen. But remember, beware of your actions...",
+		"neutralHello": "Greetings.",
+		"hateHello": "Yes?!",
+		"tradeRequest": "Want to trade?",
+		"outerColor": [
+			64,
+			64,
+			64
+		],
+		"innerColor": [
+			255,
+			255,
+			255
+		],
+		"uniqueName": "The Voice of Saruman",
+		//"uniqueText": "67% chance to earn 25 Gold and recruit a Barbarian unit from a conquered encampment\n+25% Production towards Land units in capital\nCan build a Lighting Bolt (1 per Era) in the Capital",
+		"uniques": [
+			"When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <with [67]% chance>",
+			"[+25]% Production when constructing [Land] units [in capital]",
+			"May cast a lightning bolt"
+		],
+		"cities": [
+			"Isengard",
+			"Angrenost",
+			"Fords of Isen",
+			"Nan Curunir",
+			"Dol Baran",
+			"Angren River",
+			"Gwathlo",
+			"Methedras",
+			"Adorn",
+			"Wellinghall",
+			"Dunbog",
+			"Starkmoor",
+			"Pren Gwydh",
+			"Bonevales",
+			"Ral Methedras",
+			"Derndingle"
+		]
+	},
+	{	"name": "Orcs",
+		"leaderName": "Azog",
+		"adjective": [
+			"Orcs"
+		],
+		"startBias": [
+			"Elevated"
+		],
+		"style": "Evil",
+		"preferredVictoryType": "Domination",
+		"startIntroPart1": "TBD",
+		"startIntroPart2": "",
+		"declaringWar": "Argh!",
+		"attacked": "War? Waaaarr!!",
+		"defeated": "Thy end comeng...",
+		"introduction": "Berbal! I Azog o' Moria, yu stink o' fear!",
+		"neutralHello": "What yu want?",
+		"hateHello": "Yes?!",
+		"tradeRequest": "Trad?",
+		"outerColor": [
+			54,
+			31,
+			33
+		],
+		"innerColor": [
+			125,
+			145,
+			26
+		],
+		"uniqueName": "Horror of the Deeps",
+		"uniqueText": "+20% Combat Bonus in Friendly Land\n- Melee units gain 50% more Experience from combat\nA Balrog appears in your capital when you discover Mining",
+		"uniques": [
+			"All newly-trained [Land] units [in all cities] receive the [Orc] promotion <with [100]% chance>",
+			"+[20]% combat bonus for units fighting in [Friendly Land]",
+			"[50]% XP gained from combat <for [Melee] units>",
+			"Receive free [Balrog] when you discover [Mining]",
+
+			"Starts with [Dark Culture] adopted",
+			"[-50]% [Science] <before adopting [Liberty]>"
+		],
+		"cities": [
+			"Goblin town",
+			"Withered Heath",
+			"Ettenmoors",
+			"High Pass",
+			"Misty Mountains",
+			"Grey Mountains",
+			"Dwarrodelf",
+			"Glaurung Deep",
+			"Ancalagon",
+			"Scatha",
+			"Gram Mountain",
+			"Rhimdath",
+			"Cold Fields",
+			"Hoardale"
+		]
+	},
+//	--	--	--	--	--CITY STATES--	--	--	--	--
+	//MAN
+	{	"name": "Corsairs of Umbar",
+		"adjective": [
+			"The Corsairs"
+		],
+		"style": "EastMen",
+		"cityStateType": "Militaristic",
+		"startBias": [
+			"Coast"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How barbaric. Those who live by the sword shall perish by the sword.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			255,
+			69,
+			0
+		],
+		"cities": [
+			"Umbar"
+		],
+		"uniques":[
+			"Starts with [Men Culture] adopted"
+		]
+	},
+	{	"name": "Numenor",
+		"adjective": [
+			"Numenor"
+		],
+		"cityStateType": "Maritime",
+		"startBias": [
+			"Coast"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How barbaric. Those who live by the sword shall perish by the sword.",
+		"outerColor":[
+			0,
+			0,
+			0
+		],
+		"innerColor":[
+			255,
+			69,
+			0
+		],
+		"cities":[
+			"Armenelos"
+		],
+		"uniques":[
+			"Starts with [Men Culture] adopted"
+		]
+	},
+	{	"name": "Dale",
+		"adjective": [
+			"Dale"
+		],
+		"cityStateType": "Mercantile",
+		"startBias": [
+			"River"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "They will write songs of this.... pray that they shall be in your favor.",
+		"outerColor": [0,0,0],
+		"innerColor": [
+			49,
+			97,
+			220
+		],
+		"cities": [
+			"Dale"
+		],
+		"uniques":[
+			"Starts with [Men Culture] adopted"
+		]
+	},
+	{	"name": "Beornings",
+		"adjective": [
+			"Beornings"
+		],
+		"cityStateType":"Barbaric",
+		"startBias": [
+			"River"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "They will write songs of this.... pray that they shall be in your favor.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			120,
+			84,
+			17
+		],
+		"cities": [
+			"Anduin Valley"
+		],
+		"uniques": [
+			"Cannot build [Ranged] units",
+			"Cannot build [Water] units",
+			"Cannot build [Mounted] units"
+		]
+	},
+	{	"name": "Grey Havens",
+		"adjective": [
+			"The Havens"
+		],
+		"cityStateType": "Maritime",
+		"style":"Elf",
+		"startBias": [
+			"Coast"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "They will write songs of this.... pray that they shall be in your favor.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			211,
+			220,
+			103
+		],
+		"cities": [
+			"Grey Havens"
+		]
+	},
+	{	"name": "Lake Men",
+		"adjective": [
+			"Lake Men"
+		],
+		"cityStateType": "Mercantile",
+		"startBias": [
+			"Fresh Water"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "They will write songs of this.... pray that they shall be in your favor.",
+		"outerColor": [0,0,0],
+		"innerColor": [
+			49,
+			97,
+			220
+		],
+		"cities": [
+			"Lake Town"
+		],
+		"uniques":[
+			"Starts with [Men Culture] adopted"
+		]
+	},
+	{	"name": "Dunland",
+		"adjective": [
+			"Dunland"
+		],
+		"cityStateType": "Barbaric",
+		"declaringWar": "War lingers in our hearts. Why carry on with a false peace?",
+		"attacked": "You gormless radger! You'll dine on your own teeth before you set foot in Dunland!",
+		"defeated": "A lonely wind blows through the highlands today. A dirge for Dunland. Can you hear it?",
+		"outerColor": [0,0,0],
+		"innerColor": [
+			211,
+			180,
+			113
+		],
+		"cities": [
+			"Wildmen Village"
+		],
+		"uniques":[
+		]
+	},
+	{	"name": "Tol Morwen",
+		"adjective": [
+			"Tol Morwen"
+		],
+		"cityStateType": "Maritime",
+		"startBias": [
+			"Coast"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "We never fully trusted you from the start.",
+		"outerColor": [0,0,0],
+		"innerColor": [
+			255,
+			97,
+			255
+		],
+		"cities": [
+			"Tol Morwen"
+		]
+	},
+	{	"name": "Bree",
+		"adjective": [
+			"Bree"
+		],
+		"cityStateType": "Mercantile",
+		"startBias": [
+			"Plains"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "How barbaric. Those who live by the sword shall perish by the sword.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			45,
+			255,
+			86
+		],
+		"cities": [
+			"Bree"
+		]
+	},
+	{	"name": "Himling",
+		"adjective": [
+			"Himling"
+		],
+		"cityStateType": "Maritime",
+		"startBias": [
+			"Coast"
+		],
+		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "A wrong calculation, on my part.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			153,
+			204,
+			255
+		],
+		"cities": [
+			"Himling"
+		]
+	},
+	{	"name": "Men of The Mountains",
+		"adjective": [
+			"Men of The Mountains"
+		],
+		"cityStateType": "Militaristic",
+		"startBias":[
+			"Forest"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "What a fine battle! The dead are willing to serve you!",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			250,
+			128,
+			114
+		],
+		"cities": [
+			"Dwimorberg"
+		]
+	},
+	{	"name": "Dorwinion",
+		"adjective": [
+			"Dorwinion"
+		],
+		"cityStateType": "Mercantile",
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "May the Heavens forgive you for inflicting this humiliation to our people.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			255,
+			153,
+			255
+		],
+		"cities": [
+			"Dorwinion"
+		]
+	},
+	{	"name": "Lossoth",
+		"adjective": [
+			"Lossoth"
+		],
+		"cityStateType": "Agricultural",
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "We... defeated? No... we had so much work to do!",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			255,
+			204,
+			204
+		],
+		"cities": [
+			"Lossoth"
+		]
+	},
+	{	"name": "Rhosgobel",
+		"adjective": [
+			"Rhosgobel"
+		],
+		"cityStateType": "Productive",
+		"startBias":[
+			"Forest"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "We... defeated? No... we had so much work to do!",
+		"outerColor": [0,0,0],
+		"innerColor": [151,125,0],
+		"cities": [
+			"Rhosgobel Village"
+		],
+		"uniques":[
+			"Free [Istar] appears <upon entering the [Second Age]>"
+		]
+	},
+	{	"name": "Kingdom of Rhovanion",
+		"adjective": [
+			"Kingdom of Rhovanion"
+		],
+		"cityStateType": "Militaristic",
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "...",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			255,
+			128,
+			0
+		],
+		"cities": [
+			"Kingdom of Rhovanion"
+		]
+	},
+	{	"name": "Ephel Brandir",
+		"adjective": [
+			"Ephel Brandir"
+		],
+		"cityStateType": "Productive",
+		"startBias":[
+			"Avoid Desert",
+			"Avoid Snow"
+		],
+		"style":"WestMen",
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "Congratulations, conquerer. This tribe serves you now.",
+		"outerColor": [
+			0,
+			0,
+			0
+		],
+		"innerColor": [
+			224,
+			224,
+			224
+		],
+		"cities": [
+			"Ephel Brandir"
+		],
+		"uniques":[
+			"[+1 Culture, +1 Gold, +1 Science] from each Trade Route",
+			"[+1 Production, +1 Food] <in [Forest] tiles>"
+		]
+	},
+	{	"name":"Dragons",
+		"adjective": [
+			"Dragons"
+		],
+		"cityStateType": "Barbaric",
+		"style":"Evil",
+		"startBias":[
+			"Tundra"
+		],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "...",
+		"outerColor":[0,0,0],
+		"innerColor":[178,34,34],
+		"cities":["Dragon's Nest"],
+		"uniques":[
+			"Gain a free [Dragon Lineage] [in capital]",
+			"Can only heal by pillaging",
+			"Free [Smaug] appears <after [100] turns>",
+			"Nullifies All Yield <in tiles without [Ashen Soil]>",
+			"[-99]% [Science] [in all cities]",
+			"[-10 Science]"
+		]
+	},
+	{	"name":"Spiders",
+		"adjective": [
+			"Spiders"
+		],
+		"cityStateType": "Barbaric",
+		"startBias":[
+			"Forest"
+		],
+		"style":"Evil",
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "...",
+		"outerColor":[0,0,0],
+		"innerColor":[25,25,112],
+		"cities": ["Spider's Lair"],
+		"uniques":[
+			"Nullifies All Yield <in tiles without [Web]>",
+			"Gain a free [The First Lair] [in capital]"
+		]
+	},
+	{	"name":"The Ents",
+		"adjective": [
+			"Tree-Man"
+		],
+		"cityStateType":"Barbaric",
+		"startBias":[
+			"Avoid Desert",
+			"Avoid Snow"
+		],
+		"style":"Elf",
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "...",
+		"outerColor":[0,0,0],
+		"innerColor":[205,133,63],
+		"cities":["Treegarth"],
+		"uniques":[
+			"Gain a free [Ent's Friendship] [in all cities]"
+		]
+	},
+	//Barbarian
+	{
+		"name": "Barbarians",
+		"style":"Evil",
+		"outerColor":[0,0,0],
+		"innerColor": [185,12,12],
+		"uniques": [
+			"Can only heal by pillaging"
+		]
+	}
+]

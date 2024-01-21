@@ -1,0 +1,136 @@
+[
+    {
+        "name": "Cultural",
+        "friendBonusUniques": [
+            "[+3 Culture] <before the [Second Age]>",
+            "[+6 Culture] <starting from the [Second Age]> <before the [Third Age]>",
+            "[+13 Culture] <starting from the [Third Age]>"
+        ],
+        "allyBonusUniques": [
+            "[+6 Culture] <before the [Second Age]>",
+            "[+12 Culture] <starting from the [Second Age]> <before the [Third Age]>",
+            "[+26 Culture] <starting from the [Third Age]>"
+        ],
+        "color": [139, 96, 255]
+    },
+    {
+        "name":"Maritime",
+        "friendBonusUniques": [
+			"[+1 Food] [in capital]",
+            "[+15]% [Production] [in this city] <if [Harbor] is constructed>"
+		],
+        "allyBonusUniques": [
+			"[+2 Food] [in capital]", 
+			"[+1 Food] [in all cities]",
+            "[+15]% [Production] [in this city] <if [Harbor] is constructed>",
+            "[+15]% [Gold] [in this city] <if [Harbor] is constructed>"
+		],
+        "color": [56, 255, 112]
+    },
+    {
+        "name": "Agricultural",
+        "friendBonusUniques": [
+			"[+2 Food] [in capital]"
+		],
+        "allyBonusUniques": [
+			"[+2 Food] [in capital]", 
+			"[+1 Food] [in all cities]",
+            "[+6] Unit Supply"
+		],
+        "color": [56, 255, 112]
+    },
+    {
+        "name": "Mercantile",
+        "friendBonusUniques": [
+            "[+2 Happiness] <before the [Second Age]>",
+            "[+3 Happiness] <starting from the [Second Age]>"
+        ],
+        "allyBonusUniques": [
+            "[+2 Happiness] <before the [Second Age]>",
+            "[+3 Happiness] <starting from the [Second Age]>",
+            "Provides a unique luxury",
+			"[Gold] cost of purchasing items in cities [-10]%"
+        ],
+        "color": [255, 216, 0]
+    },
+    {
+        "name": "Militaristic",
+        "friendBonusUniques": [
+			"Provides military units every ≈[20] turns",
+			"[+1]% Strength <for [Military] units> <before the [Second Age]>",
+			"[+2]% Strength <for [Military] units> <starting from the [Second Age]> <before the [Third Age]>",
+			"[+5]% Strength <for [Military] units> <starting from the [Third Age]>"
+		],
+        "allyBonusUniques": [
+			"Provides military units every ≈[17] turns",
+			"[+2]% Strength <for [Military] units> <before the [Second Age]>",
+			"[+5]% Strength <for [Military] units> <starting from the [Second Age]> <before the [Third Age]>",
+			"[+10]% Strength <for [Military] units> <starting from the [Third Age]>"
+		],
+        "color": [255, 0, 0]
+    },
+    {
+        "name": "Spiritual",
+        "friendBonusUniques":  [
+            "[+3 Faith] <before the [Second Age]>",
+            "[+6 Faith] <starting from the [Second Age]> <before the [Third Age]>",
+            "[+13 Faith] <starting from the [Third Age]>"
+        ],
+        "allyBonusUniques":  [
+            "[+6 Faith] <before the [Second Age]>",
+            "[+12 Faith] <starting from the [Second Age]> <before the [Third Age]>",
+            "[+26 Faith] <starting from the [Third Age]>",
+			"[+1 Faith] [in all cities]",
+			"[Faith] cost of purchasing items in cities [-10]%"
+        ],
+        "color": [255, 255, 255]
+    },
+	{
+        "name": "Scientific",
+        "friendBonusUniques":  [
+            "[+3 Science] <before the [Second Age]>",
+            "[+6 Science] <starting from the [Second Age]> <before the [Third Age]>",
+            "[+13 Science] <starting from the [Third Age]>"
+        ],
+        "allyBonusUniques":  [
+            "[+6 Science] <before the [Second Age]>",
+            "[+12 Science] <starting from the [Second Age]> <before the [Third Age]>",
+            "[+26 Science] <starting from the [Third Age]>",
+			"[+1 Science] from every [Scholar]"
+        ],
+        "color": [55, 55, 255]
+    },
+	{
+        "name": "Productive",
+        "friendBonusUniques":  [
+            "[+3 Production] <before the [Second Age]>",
+            "[+6 Production] <starting from the [Second Age]> <before the [Third Age]>",
+            "[+13 Production] <starting from the [Third Age]>",
+            "[+5]% Production when constructing [All] buildings [in all cities]"
+        ],
+        "allyBonusUniques":  [
+            "[+6 Production] <before the [Second Age]>",
+            "[+12 Production] <starting from the [Second Age]> <before the [Third Age]>",
+            "[+26 Production] <starting from the [Third Age]>",
+            "[-20]% maintenance cost for buildings [in all cities]"
+        ],
+        "color": [220, 100, 15]
+    },
+    {
+        "name": "Barbaric",
+        "friendBonusUniques":[
+            "Notified of new Barbarian encampments",
+            "Provides military units every ≈[15] turns"
+        ],
+        "allyBonusUniques":  [
+            "Provides military units every ≈[13] turns"
+        ],
+        "color": [175, 150, 75],
+        "uniques":[
+            "Nullifies [Science] [in all cities]",
+            "Nullifies [Culture] [in all cities]",
+            "Cannot build [Soldier] units",
+            "Cannot build [Worker] units"
+        ]
+    }
+]

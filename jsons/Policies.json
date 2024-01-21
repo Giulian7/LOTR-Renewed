@@ -1,0 +1,187 @@
+[
+	{
+		"name":"Government",
+		"era":"First Age",
+		"policies":[
+			{
+				"name":"Aristocracy",
+				"uniques":[
+					"Only available <before adopting [Peer Society]>",
+					"Only available <before adopting [Collective Rule]>"
+				],
+				"row":1,
+				"column":1
+			},
+			{
+				"name":"Peer Society",
+				"uniques":[
+					"Only available <before adopting [Aristocracy]>",
+					"Only available <before adopting [Collective Rule]>"
+				],
+				"row":1,
+				"column":3
+			},
+			{
+				"name":"Collective Rule",
+				"uniques":[
+					"Only available <before adopting [Aristocracy]>",
+					"Only available <before adopting [Peer Society]>"
+				],
+				"row":1,
+				"column":5
+			},
+			{
+				"name":"Meritocracy",
+				"uniques":[
+					"Only available <before adopting [Oligarchy]>"
+				],
+				"row":2,
+				"column":4
+			},
+			{
+				"name":"Oligarchy",
+				"uniques":[
+				],
+				"row":2,
+				"column":2
+			},
+			{
+				"name":"Democracy",
+				"uniques":[
+					"Only available <before adopting [Oligarchy]>"
+				],
+				"row":3,
+				"column":3
+			},
+			{
+				"name":"Monarchy",
+				"uniques":[],
+				"row":3,
+				"column":1
+			},
+			{
+				"name":"Government Complete"
+			}
+		]
+	},
+	{
+		"name":"Culture",
+		"era":"First Age",
+		"policies":[
+			{
+				"name":"Culture Knowledge",
+				"uniques":[
+					"Unlocks Diplomatic Unit",
+					"[15]% Gold from Great Merchant trade missions",
+					"Enables Open Borders agreements"
+				],
+				"row":1,
+				"column":15
+			},
+			{
+				"name": "Elven Culture",
+				"uniques": [
+					"Unlocks Elven Traits",
+					"Only available <before adopting [Men Culture]>",
+					"Only available <before adopting [Dwarven Culture]>",
+					"Only available <before adopting [Dark Culture]>"
+				],
+				"row": 2,
+				"column": 12
+			},
+			{
+				"name": "Dwarven Culture",
+				"uniques": [
+					"Unlocks Dwarven Traits",
+					"Only available <before adopting [Men Culture]>",
+					"Only available <before adopting [Elven Culture]>",
+					"Only available <before adopting [Dark Culture]>"
+				],
+				"row": 2,
+				"column": 14
+			},
+			{
+				"name": "Men Culture",
+				"uniques": [
+					"Unlocks Human Traits",
+					"Only available <before adopting [Dwarven Culture]>",
+					"Only available <before adopting [Elven Culture]>",
+					"Only available <before adopting [Dark Culture]>"
+				],
+				"row": 2,
+				"column": 16
+			},
+			{
+				"name": "Dark Culture",
+				"uniques": [
+					"Unlocks Black Side Traits",
+					"Only available <before adopting [Men Culture]>",
+					"Only available <before adopting [Elven Culture]>",
+					"Only available <before adopting [Dwarven Culture]>",
+					"Cities are razed [3] times as fast"
+				],
+				"row": 2,
+				"column": 18
+			},
+			{
+				"name":"Culture Complete"
+			}
+		]
+	},
+	{
+		"name":"Architecture",
+		"era":"First Age",
+		"policies":[
+			{
+				"name":"Wood Aesthetic",
+				"uniques":[
+					"Only available <with [Wood]>"
+				],
+				"row":1,
+				"column":1
+			},
+			{
+				"name":"Stone Aesthetic",
+				"uniques":[
+					"Only available <with [Stone]>"
+				],
+				"row":1,
+				"column":3
+			},
+			{
+				"name":"Majesty Ideal",
+				"uniques":[
+				],
+				"row":2,
+				"column":1
+			},
+			{
+				"name":"Architecture Complete"
+			}
+		]
+	},
+	{
+		"name":"Family",
+		"era":"First Age",
+		"policies":[
+			{
+				"name":"Patriarchy",
+				"row":1,
+				"column":1
+			},
+			{
+				"name":"Madriarchy",
+				"row":1,
+				"column":3
+			},
+			{
+				"name":"Equality",
+				"row":2,
+				"column":2
+			},
+			{
+				"name":"Family Complete"
+			}
+		] 
+	}
+]
