@@ -1,0 +1,344 @@
+[
+	{
+		"name":"The Great Culture Tree",
+		"era":"First Age",
+		"policies":[
+			//GOVERNMENT - from 1 to 10
+			//ROW 1
+			{
+				"name":"Castes",
+				"uniqueText":"Government I\n[+5]% Production when constructing [Military] units [in all cities]",
+				"uniques":[
+					"[+1 Culture, +1 Science, +1 Production, +1 Food, +1 Faith] [in all cities]",
+					"[+10]% growth [in capital]",
+					"Only available <without [Government I]>",
+					"Provides [1] [Government I]"
+				],
+				"row":1,
+				"column":2
+			},
+			{
+				"name":"Citizenship",
+				"uniques":[
+					"[+5]% [Science] [in all cities]",
+					"Provides [1] [Government I]",
+					"Only available <without [Government I]>"
+				],
+				"row":1,
+				"column":4
+			},
+			{
+				"name":"Collective Rule",
+				"uniques":[
+					"[+5]% [Culture] [in all cities]",
+					"Provides [1] [Government I]",
+					"Only available <without [Government I]>"
+				],
+				"row":1,
+				"column":6
+			},
+			//ROW 2
+			{
+				"name":"Aristocracy",
+				"uniques":[
+					"[+1 Gold, +1 Happiness] per [2] population [in capital]",
+					"[-5]% unhappiness from the number of cities",
+					"[-1 Happiness] per [4] population [in all cities]",
+					"Provides [1] [Government II]",
+					"Only available <without [Government II]>",
+					"Only available <after adopting [Castes]>"
+				],
+				"row":2,
+				"column":1
+			},
+			{
+				"name": "Theocracy",
+				"uniques": [
+					"[+5]% [Gold] from every [Temple]",
+					"[+10]% [Faith] [in all cities]",
+					"Provides [1] [Government II]",
+					"Only available <without [Government II]>",
+					"Only available <after adopting [Castes]>"
+				],
+				"row": 2,
+				"column": 3
+			},
+			{
+				"name":"Meritocracy",
+				"uniques":[
+					"[+1 Happiness] per [2] population [in all cities]",
+					"[-10]% maintenance cost for [all] buildings [in all cities]",
+					"Provides [1] [Government II]",
+					"Only available <without [Government II]>",
+					"Only available <with [Government I]>"
+				],
+				"row":2,
+				"column":5
+			},
+			//ROW 3
+			{
+				"name":"Monarchy",
+				"uniques":[
+					"Provides [1] [Government III]",
+					"Only available <without [Government III]>",
+					"Only available <with [Government II]>"
+				],
+				"row":3,
+				"column":1
+			},
+			{
+				"name":"Oligarchy",
+				"uniques":[
+					"Provides [1] [Government III]",
+					"Only available <without [Government III]>",
+					"Only available <with [Government II]>"
+				],
+				"row":3,
+				"column":3
+			},
+			{
+				"name":"Republic",
+				"uniques":[
+					"Only available <after adopting [Meritocracy]>", //Government II
+					"Provides [1] [Government III]",
+					"Only available <without [Government III]>"
+				],
+				"row":3,
+				"column":5
+			},
+			//ARCHITECTURE 8-10
+			//ROW 1
+			{
+				"name":"Wood Aesthetic",
+				"uniques":[
+
+					"Provides [1] [Architecture I]",
+					"Only available <with [Wood]>",
+					"Comment [Unlocks Wooden Architecture Buildings]"
+				],
+				"row":1,
+				"column":8
+			},
+			{
+				"name":"Stone Aesthetic",
+				"uniques":[
+					"Provides [1] [Architecture I]",
+					"Only available <with [Stone]>",
+					"Comment [Unlocks Stone Architecture Buildings]"
+				],
+				"row":1,
+				"column":10
+			},
+			//ROW 2
+			{
+				"name":"Majesty Ideal",
+				"uniques":[
+					"Provides [1] [Architecture II]",
+					"[+15]% Production when constructing [All] wonders [in all cities]"
+				],
+				"row":2,
+				"column":9
+			},
+			//CULTURE - from 12 to  
+			//ROW 1
+			{
+				"name":"Culture Knowledge",
+				"uniques":[
+					"Comment [Unlocks Diplomatic Unit]",
+					"[15]% Gold from Great Merchant trade missions",
+					"Enables Open Borders agreements"
+				],
+				"row":1,
+				"column":12
+			},
+			{
+				"name": "Elven Culture",
+				"uniques": [
+					"Comment [Unlocks Elven Traits]",
+					"Only available <before adopting [Men Culture]>",
+					"Only available <before adopting [Dwarven Culture]>",
+					"Only available <before adopting [Dark Culture]>"
+				],
+				"row": 2,
+				"column": 12
+			},
+			{
+				"name": "Dwarven Culture",
+				"uniques": [
+					"Comment [Unlocks Dwarven Traits]",
+					"Only available <before adopting [Men Culture]>",
+					"Only available <before adopting [Elven Culture]>",
+					"Only available <before adopting [Dark Culture]>"
+				],
+				"row": 2,
+				"column": 14
+			},
+			{
+				"name": "Men Culture",
+				"uniques": [
+					"Comment [Unlocks Human Traits]",
+					"Only available <before adopting [Dwarven Culture]>",
+					"Only available <before adopting [Elven Culture]>",
+					"Only available <before adopting [Dark Culture]>"
+				],
+				"row": 3,
+				"column": 12
+			},
+			{
+				"name": "Dark Culture",
+				"uniques": [
+					"Comment [Unlocks Black Side Traits]",
+					"Only available <before adopting [Men Culture]>",
+					"Only available <before adopting [Elven Culture]>",
+					"Only available <before adopting [Dwarven Culture]>",
+					"Cities are razed [3] times as fast"
+				],
+				"row": 3,
+				"column": 14
+			},
+			//SOCIETY - from 
+			{
+				"name":"Patriarchy",
+				"uniques":[
+					"Units in cities cost no Maintenance",
+					"[+5]% Production when constructing [All] units [in all cities]",
+					"Provides [1] [Family I]",
+					"Only available <without [Family I]>"
+				],
+				"row":1,
+				"column":16
+			},
+			{
+				"name":"Madriarchy",
+				"uniques":[
+					"[+2 Science] from every specialist [in all cities]",
+					"[+2 Culture] from every specialist [in all cities]",
+					"Provides [1] [Family I]",
+					"Only available <without [Family I]>"
+				],
+				"row":1,
+				"column":18
+			},
+			{
+				"name":"Tradition",
+				"uniques":[
+					"Only available <without [Society I]>",
+					"Provides [1] [Society I]"
+				],
+				"row":1,
+				"column":20
+			},
+			{
+				"name":"Liberty",
+				"uniques":[
+					"[-20]% Culture cost of adopting new Policies",
+					"[+1 Culture] [in all cities]",
+					"Only available <without [Society I]>",
+					"Provides [1] [Society I]"
+				],
+				"row":1,
+				"column":22
+			},
+			{
+				"name":"Free Speech",
+				"uniques":[
+					"[+5]% [Science] [in all cities]",
+					"Only available <after adopting [Liberty]>"
+				],
+				"row":2,
+				"column":22
+			},
+			{
+				"name": "Representation",
+				"uniques": [
+					"Only available <before adopting [Castes]>",
+					"Only available <with [Government I]>",
+					"Each city founded increases culture cost of policies [33]% less than normal",
+					"Empire enters golden age"
+				],
+				"row": 1,
+				"column": 24
+			},
+			{
+				"name":"Landed Elite",
+				"uniques":[
+					"[+10]% growth [in capital]",
+					"[+2 Food] [in capital]",
+					"Only available <after adopting [Castes]>"
+				],
+				"row":1,
+				"column":26
+			},
+			{
+				"name": "Military Caste",
+				"uniques": [
+					"[+1 Happiness, +2 Culture] [in all cities with a garrison]",
+					"[+5]% Production when constructing [Military] units [in all cities]",
+					"Only available <after adopting [Castes]>"
+				],
+				"row": 1,
+				"column": 28
+			},
+			/*{
+				"name": "Citizenship",
+				"uniques": [
+					"Tile improvement speed +25%",
+					"Free [Worker] appears"
+				],
+				"row": 1,
+				"column": 30
+			},*/
+			{
+				"name": "Warrior Code",
+				"uniques": [
+					"[+20]% Production when constructing [Melee] units [in all cities]"
+				],
+				"row": 1,
+				"column": 32
+			},
+			{
+				"name": "Discipline",
+				"uniques": [
+					"+15% combat strength for melee units which have another military unit in an adjacent tile"
+				],
+				"row": 1,
+				"column": 34
+			},
+			{
+				"name": "Military Tradition",
+				"uniques": [
+					"[50]% XP gained from combat <for [Military] units>"
+				],
+				"requires": [
+					"Warrior Code"
+				],
+				"row": 1,
+				"column": 36
+			},
+			{
+				"name": "Legalism",
+				"uniques": [
+					"Immediately creates a cheapest available cultural building in each of your first 4 cities for free"
+				],
+				"row": 1,
+				"column": 38
+			},
+			{
+				"name": "Professional Army",
+				"uniques": [
+					"Gold cost of upgrading military units reduced by 33%"
+				],
+				"requires": [
+					"Military Caste"
+				],
+				"row": 1,
+				"column": 40
+			},
+			//PRODUCTION - from to
+			//COMPLETE
+			{
+				"name":"The Great Culture Tree Complete"
+			}
+		] 
+	}
+]

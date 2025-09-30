@@ -1,0 +1,1638 @@
+/* Notes: 
+Units are divided into 2 groups: 
+- base units, which are available to every civ;
+- special units, which are uniqueTo some civ or have some special meaning;
+
+> special units order reflects the one of base units (eg Archer comes before Bowman, Melee comes before Archer, etc)
+
+You can search for a specific class of unit using capped unit type followed by SPECIAL or BASE (eg MELEE SPECIAL)
+*/
+[
+//	--	BASE UNITs 	--
+    //CIVILIAN BASE
+    {
+        "name": "Worker",
+        "unitType": "Civilian",
+        "movement": 2,
+        "uniques": [
+            "Can build [{Land} {non-[Supernatural]}] improvements on tiles"
+        ],
+        "cost": 60
+    },
+    {
+        "name": "Work Boats",
+        "unitType": "Civilian Water",
+        "movement": 4,
+        "cost": 30,
+        "requiredTech": "Sailing",
+        "uniques": [
+            "Cannot enter ocean tiles <before discovering [Navigation]>",
+            "May create improvements on water resources"
+        ]
+    },
+    {
+        "name": "Settler",
+        "unitType": "Civilian",
+        "movement": 2,
+        "cost": 106,
+        "uniques": [
+            "Founds a new city",
+            "Excess Food converted to Production when under construction",
+            "Requires at least [2] population"
+        ],
+        "hurryCostModifier": 20
+    },
+	{
+		"name":"Diplomatic",
+		"unitType":"Civilian",
+		"movement":2,
+		"cost":90,
+		"uniques":[
+			"Only available <after adopting [Middle-Earth Cultures]>",
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [50] Influence",
+			"Ignores Zone of Control"
+		]
+	},
+	{
+		"name":"Philosopher",
+		"unitType": "Civilian",
+        "movement": 2,
+        "uniques": [
+            "Religious Unit",
+			"Can [Spread Religion] [3] times",
+			"Can be purchased for [100] [Faith] [in this city]",
+			"Unbuildable"
+        ]
+	},
+	{
+		"name":"Censor",
+		"unitType": "Civilian",
+        "movement": 2,
+        "uniques": [
+            "Religious Unit",
+			"Prevents spreading of religion to the city it is next to",
+			"Can be purchased for [100] [Faith] [in this city]",
+			"Unbuildable"
+        ]
+	},
+	//MAGICAL OBJECT BASE
+	{
+		"name":"Valaróma",
+		"unitType":"Magical Object",
+		"movement":2,
+		"cost":1,
+		"uniques":[
+			"Unbuildable",
+			"Can see invisible [Land] units",
+			"[+25]% Strength for [Land] units within [0] tiles <when fighting in [Vegetation] tiles>"
+		]
+	},
+	{
+        "name": "Palantir",
+        "unitType": "Magical Object",
+        "movement": 2,
+        "uniques": [
+			"Invisible to non-adjacent units",
+            "Unbuildable",
+			"[4] Sight",
+			"Can see over obstacles",
+			"Ignores Zone of Control"
+        ]
+    },
+	{
+		"name": "Elven Ring",
+        "unitType": "Magical Object",
+        "movement": 2,
+        "uniques": [
+			"Unbuildable",
+			"Can be purchased for [60] [Culture] [in this city]",
+			"Only available <if [Gwaith-i-Mirdain] is constructed>",
+			"Limited to [1] per Civilization"
+		]
+	},
+	{
+		"name": "The One Ring",
+        "unitType": "Magical Object",
+        "movement": 2,
+        "uniques": [
+			"Invisible to non-adjacent units",
+			"[65]% Strength bonus for [Military] units within [0] tiles",
+            "Unbuildable",
+			"Can see over obstacles"
+        ]
+	},
+	{
+		"name": "Silmarill",
+        "unitType": "Magical Object",
+        "movement": 2,
+        "uniques": [
+            "Unbuildable",
+			"Can see over obstacles"
+        ],
+        "hurryCostModifier": 20
+	},
+	{
+		"name":"Bat Cloud",
+		"unitType":"Civilian",
+		"uniqueTo":"Orcs",
+		"movement":3,
+		"uniques":[
+			"Sky Coverer",
+			"Can see over obstacles",
+			"[-5]% Strength for enemy [All] units in adjacent [All] tiles"
+		]
+	},
+	{
+		"name":"Fog",
+		"unitType":"Magical Object",
+		"uniqueTo":"Mordor",
+		"movement":1,
+		"uniques":[
+			"Sky Coverer",
+			"[-1] Sight",
+			"[+25]% Strength for [Land] units within [0] tiles"
+		]
+	},
+    //SCOUT BASE
+    {
+		"name": "Scout",
+		"unitType": "Scout",
+		"movement": 2,
+		"strength": 5,
+		"cost": 25,
+		"uniques": [
+			"Ignores terrain cost",
+			"Never appears as a Barbarian unit",
+			
+           	"Can build [Watchtower] improvements on tiles",
+			"Can build [Road] improvements on tiles",
+			"[+34]% construction time for [All] improvements"
+		],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Scavenger",
+		"replaces": "Scout",
+		"uniqueTo": "Orcs",
+		"unitType": "Scout",
+		"movement": 3,
+		"strength": 8,
+		"cost": 20,
+		"uniques": [
+			"Invisible to non-adjacent units",
+			"Ignores terrain cost"
+		],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name":"Dark Critter",
+		"uniqueTo": "Mordor",
+		"unitType": "Scout",
+		"replaces":"Scout",
+		"movement": 3,
+		"strength": 4,
+		"cost": 35,
+		"uniques": [
+			"Only available <if [Pits of Utumno] is constructed>",
+			"Can build [Corruption] improvements on tiles",
+			"Invisible to non-adjacent units",
+			"Ignores terrain cost"
+		],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name":"Commander",
+		"unitType":"Scout",
+		"uniqueTo":"Orcs",
+		"replaces":"Settler",
+		"movement":2,
+		"strength":10,
+		"cost":40,
+		"uniques":[
+			"Founds a new city <in [Rough terrain] tiles>"
+		],
+		"promotions":[
+			"Orc",
+			"Commander"
+		],
+		"attackSound":"nonmetalhit"
+	},
+	{
+		"name": "Ent",
+		"unitType": "Ranged",
+		"uniqueTo":"Tree-Man",
+		"movement": 1,
+		"strength": 9,
+		"rangedStrength": 12,
+		"cost": 75,
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Only available <if [Ent's Friendship] is constructed>",
+			"Double movement in [Vegetation]",
+			"[+100]% Strength <vs cities>",
+			"No defensive terrain bonus",
+			"Can transform to [Ucorn] <starting from the [Second Age]>",
+		],
+		"promotions":[
+			"Tree-Man"
+		],
+		"attackSound": "throw"
+	},
+	{
+		"name":"Ucorn",
+		"unitType": "Ranged",
+		"movement": 1,
+		"strength": 20,
+		"cost": 75,
+		"uniques": [
+			"Unbuildable",
+			"[+100]% Strength <in [Vegetation] tiles>",
+			"Cannot move <in [non-[Vegetation]] tiles>",
+			"No defensive terrain bonus"
+		],
+		"promotions":[
+			"Wild Fury",
+			"Tree-Man"
+		],
+		"attackSound": "throw"
+	},
+    //MELEE BASE
+	{
+		"name": "Warrior",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques":[
+			"Militia",
+			"[+10]% Strength <after discovering [Metallurgy]>"
+		],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Wildman of Dunland",
+		"unitType": "Melee",
+		"uniqueTo": "Dunland",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 9,
+		"cost": 20,
+		"obsoleteTech": "Metal Casting",
+        "uniques": [
+            "[+30]% Strength decreasing with distance from the capital"
+        ],
+		"attackSound": "nonmetalhit"
+	},
+    {
+		"name": "Spearman",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 13,
+		"cost": 56,
+		"requiredTech": "Metallurgy",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"requiredResource": "Bronze",
+		"uniques": [
+			"Militia",
+			"[+50]% Strength <vs [Mounted] units>"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Rhudaur Spearman",
+		"replaces": "Spearman",
+		"uniqueTo": "Barbarians",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 14,
+		"cost": 56,
+		"requiredTech": "Alloy",
+		"upgradesTo": "Pikeman",
+		"requiredResource": "Bronze",
+		"uniques": [
+			"Militia",
+			"[+50]% Strength <vs [Mounted] units>"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Easterling",
+		"replaces": "Spearman",
+		"uniqueTo": "Rhun",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 14,
+		"cost": 56,
+		"requiredTech": "Metallurgy",
+		"uniques": [
+			"Soldier",
+			"[+50]% Strength <vs [Mounted] units>",
+			"[+10]% Strength <after discovering [Alloy]>",
+			"[+50]% Strength <during the [Second Age]>",
+			"[+75]% Strength <during the [Third Age]>",
+			"[+100]% Strength <during the [Fourth Age]>",
+			"No movement cost to pillage"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Phalanx",
+		"replaces": "Spearman",
+		"uniqueTo": "Durin's Dwarves",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 16,
+		"cost": 60,
+		"requiredTech": "Metallurgy",
+		"upgradesTo": "Pikeman",
+		"requiredResource": "Copper",
+		"uniques": [
+			"Soldier",
+			"[+50]% Strength <vs [Mounted] units>"
+		],
+		"promotions":["Formation I"],
+		"attackSound": "metalhit"
+	},
+    {
+		"name": "Swordsman",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 17,
+		"cost": 75,
+		"requiredTech": "Alloy",
+		"upgradesTo": "Longswordsman",
+		"obsoleteTech": "Metal Casting",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit",
+		"uniques":["Soldier"]
+	},
+	{
+		"name": "Pikeman",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 20,
+		"cost": 56,
+		"requiredTech": "Civil Service",
+		"requiredResource": "Copper",
+		"uniques": [
+			"Soldier",
+			"[+50]% Strength <vs [Mounted] units>"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Tower Guard",
+		"replaces": "Pikeman",
+		"uniqueTo": "Gondor",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 22,
+		"cost": 90,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"Soldier",
+			"[+50]% Strength <vs [Mounted] units>",
+			"[+25]% Strength <when fighting in [Friendly Land] tiles>"
+		],
+		"upgradesTo": "Longswordsman",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Longswordsman",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 20,
+		"cost": 56,
+		"requiredTech": "Metal Casting",
+		"requiredResource": "Iron",
+		"uniques": [
+			"Soldier",
+			"[+50]% Strength <vs [Mounted] units>"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Black Numenorean",
+		"replaces": "Swordsman",
+		"uniqueTo": "Corsairs of Umbar",
+		"unitType": "Melee",
+		"movement": 3,
+		"strength": 28,
+		"cost": 120,
+		"requiredTech": "Metallurgy",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 20,
+		"uniques":[
+			"Soldier"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Noldor Warriors",
+		"replaces": "Longswordsman",
+		"uniqueTo": "Noldor Elves",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 25,
+		"cost": 120,
+		"requiredTech": "Alloy",
+		"uniques": [
+			"Soldier",
+			"[+20]% Strength <when defending><with [Mithril]>",
+			"[+10] HP when healing"
+		],
+		"promotions": [
+			"Medic"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Olog-hai",
+		"unitType": "Melee",
+		"uniqueTo": "Mordor",
+		"requiredResource":"Niter",
+		"movement": 2,
+		"strength": 28,
+		"cost": 120,
+		"requiredTech": "Natural Studies",
+		"uniques": [
+			"[+10]% Strength <when adjacent to a [Orc] unit>",
+			"[+50]% Strength <vs cities>",
+			"No defensive terrain bonus",
+			"[-1] Sight"
+		],
+		"attackSound": "throw"
+	},
+    //MOUNTED BASE
+    {
+		"name": "Horseman",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 15,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"uniques": [
+			"Militia",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-33]% Strength <vs cities>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+    {
+		"name": "Rohirrim",
+		"replaces": "Horseman",
+		"unitType": "Mounted",
+		"uniqueTo": "Rohan",
+		"movement": 4,
+		"strength": 17,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"uniques": [
+			"Soldier",
+			"Can move after attacking",
+			"[-33]% Strength <vs cities>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+    {
+		"name": "Wainrider",
+		"replaces": "Horseman",
+		"uniqueTo": "Rhun",
+		"unitType": "Mounted",
+		"movement": 3,
+		"strength": 16,
+		"cost": 56,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"uniques": [
+			"Soldier",
+			"No defensive terrain bonus",
+			"[+20]% Strength <when defending>",
+			"Rough terrain penalty"
+		],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Knight",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 20,
+		"cost": 120,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"Soldier",
+			"[+50]% Strength <vs [Mounted] units>"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Rohirrim Archer",
+		"replaces": "Mounted Archer",
+		"unitType": "Ranged",
+		"uniqueTo": "Rohan",
+		"movement": 4,
+		"strength": 21,
+		"rangedStrength": 20,
+		"cost": 120,
+		"requiredTech": "Chivalry",
+		"requiredResource": "Horses",
+		"uniques": [
+			"Soldier",
+			"Can move after attacking"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+	{
+		"name": "Dol Amroth Knight",
+		"replaces": "Knight",
+		"unitType": "Mounted",
+		"uniqueTo": "Gondor",
+		"movement": 4,
+		"strength": 25,
+		"cost": 120,
+		"requiredTech": "Chivalry",
+		"requiredResource": "Horses",
+		"uniques": [
+			"Soldier",
+			"Can move after attacking"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+	{
+		"name": "Lancer",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 26,
+		"cost": 185,
+		"requiredTech": "Alloy",
+		"requiredResource": "Horses",
+		"uniques": [
+			"Soldier",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Rough terrain penalty",
+			"[-33]% Strength <vs cities>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"Formation I"
+		],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Rivendell Lancer",
+		"replaces": "Lancer",
+		"uniqueTo": "Noldor Elves",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 26,
+		"cost": 185,
+		"requiredTech": "Alloy",
+		"uniques": [
+			"Soldier",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Rough terrain penalty",
+			"[-33]% Strength <vs cities>"
+		],
+		"promotions": [
+			"Formation I"
+		],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Haradrim Lancer",
+		"replaces": "Lancer",
+		"uniqueTo": "Harad",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 26,
+		"cost": 185,
+		"requiredTech": "Metal Casting",
+		"requiredResource": "Horses",
+		"uniques": [
+			"Soldier",
+			"Starts with 30 experience",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Rough terrain penalty",
+			"[-33]% Strength <vs cities>"
+		],
+		"promotions": [
+			"Formation I"
+		],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Mumakil",
+		"uniqueTo": "Harad",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 36,
+		"cost": 245,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Ivory",
+		"uniques": [
+			"Soldier",
+			"Can move after attacking",
+			"[+50]% Strength <vs [Melee] units>",
+			"No defensive terrain bonus",
+			"[-33]% Strength <vs cities>"
+		],
+		"promotions": [
+			"Wild Fury"
+		],
+		"attackSound": "horse"
+	},
+    //RANGED BASE
+    {
+        "name": "Archer",
+        "unitType": "Ranged",
+        "movement": 2,
+        "strength": 5,
+        "rangedStrength": 7,
+        "cost": 40,
+        "requiredTech": "Forestry",
+        "obsoleteTech": "Construction",
+        "upgradesTo": "Composite Bowman",
+        "attackSound": "arrow"
+    },
+	{
+        "name": "Composite Bowman",
+        "unitType": "Ranged",
+        "movement": 2,
+        "strength": 7,
+        "rangedStrength": 12,
+        "cost": 75,
+        "requiredTech": "Construction",
+        "attackSound": "arrow",
+		"uniques":["Soldier"]
+    },
+	{
+		"name": "Mounted Archer",
+		"unitType": "Ranged",
+		"movement": 4,
+		"strength": 7,
+		"rangedStrength": 11,
+		"cost": 56,
+		"requiredTech": "The Wheel",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Civil Service",
+		"uniques": [
+			"Soldier",
+			"No defensive terrain bonus",
+			"Rough terrain penalty"
+		],
+		"attackSound": "arrow"
+	},
+    //SIEGE BASE
+    {
+		"name": "Ballista",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 9,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Gears and Mechanic",
+		"upgradesTo": "Catapult",
+		"requiredResource": "Copper",
+		"uniques": [
+			"[+200]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Catapult",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 20,
+		"cost": 56,
+		"requiredTech": "Gears and Mechanic",
+		"uniques": [
+			"Destroys tile improvements when attacking",
+			"[+50]% Strength <vs [Mounted] units>"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Trebuchet",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 21,
+		"cost": 185,
+		"requiredTech": "Gears and Mechanic",
+		"uniques": [
+			"Destroys tile improvements when attacking",
+			"[+200]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit"
+		],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Explosive Mine",
+		"uniqueTo": "Isengard",
+		"unitType": "Siege",
+		"requiredResource": "Niter",
+		"movement": 2,
+		"strength": 13,
+		"range": 1,
+		"rangedStrength": 25,
+		"cost": 160,
+		"requiredTech": "Natural Studies",
+		"uniques": [
+			"[+400]% Strength <vs cities>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Self-destructs when attacking"
+		],
+		"attackSound":"cannon"
+	},
+    //WATER BASE
+    {
+        "name": "Galley",
+        "unitType": "Melee Water",
+        "movement": 3,
+        "strength": 8,
+        "cost": 40,
+		"requiredTech":"Sailing",
+		"upgradesTo":"Brigantine",
+        "uniques": [
+			"Costs [2] [Wood]",
+            "Cannot enter ocean tiles"
+        ],
+        "attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Brigantine",
+		"unitType": "Ranged Water",
+		"movement": 3,
+		"strength": 16,
+		"rangedStrength": 17,
+		"cost": 100,
+		"requiredTech": "Navigation",
+		"upgradesTo": "Vessel",
+		"uniques": [
+			"Costs [3] [Wood]",
+			"Cannot enter ocean tiles"
+		],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Caravel",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength":9,
+		"rangedStrength":15,
+		"range":1,
+		"cost": 120,
+		"requiredTech": "Navigation",
+		"uniques":[
+			"Costs [5] [Wood]",
+			"[+1] Sight",
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [20] Influence",
+			"Withdraws before melee combat <with [80]% chance>"
+		],
+		"hurryCostModifier": 30
+	},
+	{
+		"name": "Vessel",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 28,
+		"rangedStrength": 20,
+		"range":1,
+		"cost": 185,
+		"requiredTech": "Vessels Building",
+		"uniques":[
+			"Costs [5] [Wood]",
+			"Costs [3] [Iron]"
+		],
+		"attackSound": "arrow",
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Frigate",
+		"unitType": "Ranged Water",
+		"movement":5,
+		"strength":23,
+		"rangedStrength": 28,
+		"cost":185,
+		"requiredTech": "Vessels Building",
+		"uniques":[
+			"Costs [4] [Wood]",
+			"Costs [2] [Iron]"
+		],
+		"attackSound": "arrow",
+		"hurryCostModifier": 20
+	},
+	//AIR BASE
+	{
+		"name":"Great Eagle",
+		"unitType": "Air",
+		"movement": 10,
+		"strength": 10,
+		"rangedStrength": 15,
+		"range":5,
+		"cost":70,
+		"requiredResource":"Good Force I",
+		"uniques":[
+			"Unbuildable",
+			"Can see over obstacles",
+			"Can see invisible [Land] units"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name":"Fellbeast",
+		"unitType": "Ranged",
+		"uniqueTo":"Mordor",
+		"movement": 7,
+		"strength": 20,
+		"rangedStrength": 7,
+		"cost": 185,
+		"requiredResource": "Evil Force I",
+		"requiredTech": "Natural Studies",
+		"uniques":["Can carry [1] [Nazgul] units"],
+		"hurryCostModifier": 20,
+		"attackSound": "nonmetalhit"
+	},
+//--	--   --SPECIAL UNITS--	  --
+	//CIVILIAN SPECIAL
+	{
+		"name":"Dwarven Patriarch",
+		"unitType": "Civilian",
+		"uniqueTo":"Durin's Dwarves",
+		"replaces":"Settler",
+        "movement": 2,
+		"strength":10,
+        "cost": 106,
+        "uniques": [
+            "Founds a new city <in [Elevated] tiles>",
+            "Excess Food converted to Production when under construction",
+            "Requires at least [2] population"
+        ],
+        "hurryCostModifier": 20,
+		"promotions":["Dwarf","Commander"]
+	},
+	//SCOUT SPECIAL
+	{
+		"name":"Annantar",
+		"unitType":"Scout",
+		"uniqueTo": "Mordor",
+		"strength":12,
+		"movement":2,
+		"uniques":[
+			"Unbuildable",
+			"[+67]% Strength <vs [Elf] units>"
+		],
+		"promotions":[
+			"Commander","Elf"
+		]
+	},
+	//MELEE SPECIAL
+	{
+		"name": "Orc Marauder",
+		"unitType": "Melee",
+		"uniqueTo": "Orcs",
+		"replaces": "Swordsman",
+		"movement": 2,
+		"strength": 18,
+		"cost": 75,
+		"requiredTech": "Metallurgy",
+		"upgradesTo": "Longswordsman",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 20,
+		"uniques":["Militia"],
+		"attackSound": "metalhit",
+		"promotions":["Orc"]
+	},
+	{
+		"name": "Black Uruk",
+		"unitType": "Melee",
+		"uniqueTo": "Mordor",
+		"movement": 3,
+		"strength": 19,
+		"cost": 75,
+		"requiredTech": "Metallurgy",
+		"upgradesTo": "Longswordsman",
+		"requiredResource": "Iron",
+		"uniques": [
+			"Soldier",
+			"Ignores terrain cost"
+		],
+		"promotions":["Orc"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Uruk-Hai",
+		"unitType": "Melee",
+		"uniqueTo": "Isengard",
+		"movement": 3,
+		"strength": 19,
+		"cost": 75,
+		"requiredTech": "Metallurgy",
+		"upgradesTo": "Longswordsman",
+		"requiredResource": "Iron",
+		"uniques": [
+			"Soldier",
+			"Ignores terrain cost"
+		],
+		"promotions":["Orc"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Guardian",
+		"unitType": "Melee",
+		"replaces": "Swordsman",
+		"uniqueTo":"Durin's Dwarves",
+		"movement": 3,
+		"strength": 20,
+		"cost": 75,
+		"requiredTech": "Metallurgy",
+		"upgradesTo": "Longswordsman",
+		"requiredResource": "Iron",
+		"uniques": [
+			"Soldier",
+			"[+40]% Strength <when defending>",
+			"[+10]% Strength <when adjacent to a [Friendly] unit>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	//RANGED SPECIAL
+	{
+        "name": "Goblin Archer",
+        "unitType": "Ranged",
+        "uniqueTo": "Orcs",
+        "replaces": "Archer",
+        "movement": 2,
+        "strength": 4,
+        "rangedStrength": 8,
+        "cost": 40,
+        "requiredTech": "Forestry",
+        "upgradesTo": "Composite Bowman",
+		"uniques":["Militia"],
+        "attackSound": "arrow"
+    },
+	{
+        "name": "Haradrim Archer",
+        "unitType": "Ranged",
+        "uniqueTo": "Harad",
+        "replaces": "Composite Bowman",
+        "movement": 3,
+        "strength": 4,
+        "rangedStrength": 8,
+        "cost": 60,
+        "requiredTech": "Construction",
+        "uniques": [
+			"Soldier",
+            "[+25]% Strength <when fighting in [Desert] tiles>"
+        ],
+        "attackSound": "arrow"
+    },
+    {
+        "name": "Axe Thrower",
+        "uniqueTo": "Durin's Dwarves",
+        "replaces": "Composite Bowman",
+        "unitType": "Ranged",
+        "movement": 2,
+        "strength": 12,
+        "rangedStrength": 13,
+        "range": 1,
+        "cost": 75,
+        "requiredTech": "Metallurgy",
+        "attackSound": "arrow"
+    },
+    {
+        "name": "Strider",
+        "uniqueTo": "Arnor",
+        "replaces": "Composite Bowman",
+        "unitType": "Ranged",
+        "movement": 2,
+        "strength": 8,
+        "rangedStrength": 13,
+        "range": 2,
+        "cost": 75,
+        "requiredTech": "Construction",
+        "uniques": [
+            "Ignores terrain cost"
+        ],
+        "attackSound": "arrow"
+    },
+	{
+		"name": "Ithilien Ranger",
+		"replaces": "Mounted Archer",
+		"uniqueTo": "Gondor",
+		"unitType": "Ranged",
+		"movement": 3,
+		"strength": 14,
+		"rangedStrength": 19,
+		"cost": 120,
+		"requiredTech": "Mathematics",
+		"uniques": [
+			"Soldier",
+			"Ignores terrain cost",
+			"[+1] Sight"
+		],
+		"promotions":[
+			"Ranger"
+		],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Mirkwood Archer",
+		"unitType": "Ranged",
+		"movement": 2,
+		"strength": 13,
+		"rangedStrength": 20,
+		"replaces": "Mounted Archer",
+		"uniqueTo": "Sindar Elves",
+		"cost": 120,
+		"requiredTech": "Mathematics",
+		"promotions": [
+			"Extended Range"
+		],
+		"attackSound": "arrow"
+	},
+	//ARMOR
+	{
+		"name": "Battering Ram",
+		"unitType": "Armor",
+		"uniqueTo": "Orcs",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 10,
+		"cost": 75,
+		"requiredTech": "Alloy",
+		"uniques": [
+			"[+300]% Strength <vs cities> <when attacking>", 
+			"No defensive terrain bonus",
+			"[-33]% Strength <when defending>",
+			"[-1] Sight",
+			"Can only attack [City] units"
+		],
+		"promotions":  ["Cover I"],
+		"attackSound": "throw"
+	},
+	{
+		"name":"Grond",
+		"unitType":"Armor",
+		"uniqueTo":"Mordor",
+		"movement":1,
+		"strength":35,
+		"requiredTech":"Natural Studies",
+		"uniques":[
+			"Unbuildable",
+			"[+700]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"[-1] Sight",
+			"Can only attack [City] units"
+		]
+	},
+	//WATER
+	{
+		"name": "Pirate Navy",
+		"unitType": "Melee Water",
+		"uniqueTo":"Corsairs of Umbar",
+		"movement": 4,
+		"strength": 10,
+		"cost": 45,
+		"requiredTech": "Sailing",
+		"upgradesTo":"Brigantine",
+		"uniques": [
+			"Only available <with [Wood]>",
+			"Cannot enter ocean tiles",
+			"Can only attack [Water] units"
+		],
+		"attackSound": "nonmetalhit"
+	},
+	//advanced
+	/*{
+		"name":"Musketman",
+		"unitType":"Melee",
+		"movement":2,
+		"strength":25,
+		"cost":120,
+		"requiredTech":"Alchemy",
+		"uniques":[
+			"Only available <if [Gun Armory] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "cannon"
+	},
+	{
+		"name":"Cannon",
+		"unitType":"Ranged",
+		"movement":1,
+		"strength":5,
+		"rangedStrength":35,
+		"range":2,
+		"cost":120,
+		"requiredTech":"Alchemy",
+		"uniques":[
+			"Only available <if [Gun Armory] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "cannon"
+	},*/
+	//	--	--	--	--	--	--GREAT PEOPLE--	--	--	--	--
+	{
+		"name": "Great Artist",
+		"unitType": "Civilian",
+		"uniques": [
+			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"Can instantly construct a [Landmark] improvement <by consuming this unit>",
+			"Is part of Great Person group [Culture]",
+			"Unbuildable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Scientist",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can hurry technology research",
+			"Can instantly construct a [Academy] improvement <by consuming this unit>",
+			"Great Person - [Science]",
+			"Unbuildable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
+			"Can instantly construct a [Customs house] improvement <by consuming this unit>",
+			"Great Person - [Gold]",
+			"Unbuildable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can speed up construction of a wonder",
+			"Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+			"Great Person - [Production]",
+			"Unbuildable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great General",
+		"unitType": "Civilian",
+		"uniques": [
+			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Great Person - [War]",
+			"Unbuildable"
+		],
+		"promotions":[
+			"Commander"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Administrator",
+		"unitType": "Civilian",
+		"uniques": [
+			"Empire enters a [16]-turn Golden Age <by consuming this unit>",
+			"Is part of Great Person group [Culture]",
+			"Unbuildable"
+		],
+		"movement": 2
+	}
+	//BARBARIANs
+	{
+		"name": "Cave Troll",
+		"replaces": "Mounted Archer",
+		"uniqueTo": "Barbarians",
+		"unitType": "Melee",
+		"movement": 3,
+		"strength": 11,
+		"cost": 75,
+		"requiredTech": "The Wheel",
+		"uniques": [
+			"[100]% Strength <vs [Civilian] units>",
+			"No defensive terrain bonus"
+		],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Giant",
+		//"replaces": "Mounted Archer",
+		"uniqueTo": "Barbarians",
+		"unitType": "Ranged",
+		"range":1,
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength":30,
+		"cost": 25,
+		"uniques": [
+			"No defensive terrain bonus",
+			"Limited to [3] per Civilization",
+			"Can only attack [Land] units <upon losing at least [10] HP in a single attack>",
+			"Cannot attack"
+		],
+		"attackSound": "throw"
+	},
+	{
+		"name":"Wolf Pack",
+		"uniqueTo": "Barbarians",
+		"unitType": "Melee",
+		"movement": 1,
+		"strength": 10,
+		"cost": 25,
+		"uniques": [
+			"No defensive terrain bonus",
+			"Can see invisible [Land] units"
+		],
+		"attackSound": "nonmetalhit"
+	},
+	/*{
+		"name":"Storm",
+		"unitType":"Ranged",
+		"uniqueTo":"Barbarians",
+		"range":1,
+		"strength":10,
+		"movement":1,
+		"cost":12
+	},*/
+	{
+        "name": "Lightning Bolt",
+        "unitType": "Air",
+        "uniqueTo": "Isengard",
+        "movement": 1,
+        "strength": 1,
+        "rangedStrength": 25,
+        "range": 5,
+        "uniques": [
+			"Self-destructs when attacking",
+			"Cannot be intercepted",
+            "Unbuildable",
+            "[-100]% maintenance costs",
+            "[+50]% Strength <during the [Third Age]>",
+            "[+100]% Strength <during the [Fourth Age]>"
+        ],
+        "attackSound": "torpedo"
+    },
+    {
+        "name": "Watchtower Guard",
+        "unitType": "Ranged",
+        "uniqueTo": "Arnor",
+        "strength": 1,
+        "rangedStrength": 20,
+        "range": 3,
+        "uniques": [
+			"Soldier",
+            "Unbuildable",
+			"Cannot move"
+        ],
+		"attackSound": "arrow"
+    },
+    {
+        "name": "Barricade Archer",
+        "uniqueTo": "Mordor",
+        "unitType": "Ranged",
+        "strength": 1,
+        "rangedStrength": 19,
+        "uniques": [
+			"Soldier",
+            "Unbuildable",
+			"Cannot move"
+        ],
+        "attackSound": "arrow"
+    },
+
+//SPECIAL UNITS
+
+	{	"name":"Glaurung",
+		"uniqueTo":"Dragons",
+		"unitType":"Lizard",
+		"movement":2,
+		"strength":30,
+		"rangedStrength":45,
+		"range":1,
+		"uniques":[
+			"Unbuildable"
+		],
+		"promotions":["Growth I"]
+	},
+	{
+		"name":"Ungoliant",
+		"uniqueTo":"Spiders",
+		"unitType":"Artrhopod",
+		"movement":2,
+		"strength":35,
+		"uniques":[
+			"Unbuildable"
+		]
+	},
+	{
+		"name":"Beorn",
+		"unitType":"Melee",
+		"movement":2,
+		"strength":35,
+		"uniques":[
+			"Unbuildable"
+		],
+		"promotions":["Skin-Changer","Wild Fury", "Ranger"]
+	},
+	{
+		"name":"Istar",
+		"unitType":"Melee",
+		"movement":2,
+		"strength":35,
+		"requiredResource":"Good Force I",
+		"uniques":[
+			"Unbuildable"
+		],
+		"promotions":["Maiar"],
+		"civilopediaText":[
+			{
+				"centered":false,
+				"text":"'Do not meddle in the affairs of wizards, for they are subtle and quick to anger.'\n― Gildor Inglorion in The Fellowship of the Ring, Three is Company"
+			}
+		]
+	},
+	{
+		"name":"Balrog",
+		"unitType":"Melee",
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 28,
+		"range": 1,
+		"requiredResource":"Evil Force I",
+		"uniques":[
+			"Unbuildable"
+		],
+		"promotions":["Maiar", "Will"],
+		"civilopediaText":[
+			{
+				"extraImage":"ExtraImages/Balrog",
+				"centered":true
+			},
+			{
+				"text":"'Then something came into the chamber - I felt it through the door, and the Orcs themselves were afraid and fell silent. It laid hold of the iron ring, and then it perceived me and my spell.'\n—The Lord of the Rings, The Bridge of Khazad-dûm"
+			}
+		]
+	},
+	{
+		"name": "Gandalf, the Grey",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 16,
+		"uniques": [
+			"Unbuildable",
+			"[+100]% Strength <vs [Orc] units>",
+			"Can transform to [Gandalf, the White] <upon ending a turn in a [Corruption] tile>"
+		],
+		"promotions": ["Will","Maiar"]
+	},
+	{
+		"name": "Gandalf, the White",
+		"unitType": "Melee",
+		"movement": 3,
+		"strength": 18,
+		"rangedStrength": 14,
+		"range": 1,
+		"cost": 120,
+		"requiredTech": "Horseback Riding",
+		"uniques": [
+			"Unbuildable",
+			"[+100]% Strength <vs [Orc] units>",
+			"[+200]% Strength <vs [Balrog] units>",
+			"Ignores Zone of Control",
+			"Can transform to [Gandalf, the Grey] <upon ending a turn in a [non-[Corruption]] tile>"
+		],
+		"promotions": ["Will","Maiar"]
+	},
+	{
+		"name":"Eowyn",
+		"unitType":"Mounted",
+		"movement":5,
+		"strength":14,
+		"promotions":["Will"],
+		"uniques":["Unbuildable","[300]% Strength <vs [Witch-King] units>"]
+	},
+	{
+		"name": "Theoden",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 16,
+		"promotions": ["Will","Commander"],
+		"uniques": [
+			"Unbuildable"
+		]
+	},
+	{
+		"name": "Faramir",
+		"unitType": "Ranged",
+		"movement": 2,
+		"strength": 18,
+		"rangedStrength": 15,
+		"range": 2,
+		"promotions": [],
+		"uniques":[
+			"Unbuildable",
+			"Ignores terrain cost"
+		]
+	},
+	{
+		"name": "Elrond",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 17,
+		"promotions": ["Elf","Will","Commander"],
+		"uniques": [
+			"Unbuildable",
+			"[+1] Sight"
+		]
+	},
+	{
+		"name": "Aragorn",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 18,
+		"promotions": ["Dunedain","Will","Commander"],
+		"uniques": [
+			"Unbuildable",
+			"Ignores terrain cost"
+		]
+	},
+	{
+		"name": "Gimli",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 18,
+		"promotions": ["Dwarf"],
+		"uniques": [
+			"Unbuildable",
+			"[+50]% Strength <when attacking>"
+		]
+	},
+	{
+		"name": "Galadriel",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 15,
+		"promotions": ["Elf","Will","Blitz"],
+		"uniques": ["Unbuildable", "[+50]% Strength"]
+	},
+	{
+		"name": "Legolas",
+		"unitType": "Ranged",
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 18,
+		"promotions": ["Elf","Logistics"],
+		"uniques": [
+			"Unbuildable",
+			"[50]% Strength <vs [Melee] units>"
+		]
+	},
+	{
+		"name": "Wormtongue",
+		"unitType": "Melee",
+		"movement": 3,
+		"strength": 12,
+		"promotions": ["Man","Corrupted"],
+		"uniques": [
+			"Unbuildable",
+			"Withdraws before melee combat <with [100]% chance>"
+		]
+	},
+	{
+		"name": "Gothmog",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 14,
+		"promotions": ["Maiar","Will"],
+		"uniques": [
+			"Unbuildable",
+			"Can move after attacking"
+		]
+	},
+	{
+		"name": "Azog",
+		"unitType": "Melee",
+		"movement": 3,
+		"strength": 16,
+		"promotions": ["Orc","Will","Commander"],
+		"uniques": [
+			"Unbuildable",
+			"Heals [35] damage if it kills a unit"
+		]
+	},
+	{
+		"name": "Smaug",
+		"unitType": "Lizard",
+		"movement": 4,
+		"strength": 20,
+		"rangedStrength": 20,
+		"promotions": ["Wings","Fire"],
+		"uniques": [
+			"Unbuildable",
+			"Earn [10]% of killed [Military] unit's [Cost] as [Gold]"
+		]
+	},
+	{
+		"name": "Saruman",
+		"unitType": "Ranged",
+		"movement": 2,
+		"strength": 15,
+		"range": 2,
+		"rangedStrength": 20,
+		"promotions": ["Maiar","Will", "Commander"],
+		"uniques": [
+			"Unbuildable",
+			"Must set up to ranged attack"
+		]
+	},
+	{
+		"name": "Shelob",
+		"unitType": "Artrhopod",
+		"movement": 3,
+		"strength": 20,
+		"promotions": ["Will","Tunnel"],
+		"uniques": [
+			"Unbuildable"
+		]
+	},
+	{
+		"name": "Witch-king",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 25,
+		"promotions": ["Ghost","Will","Commander"],
+		"uniques": [
+			"Unbuildable"
+		]
+	},
+	{
+		"name": "Mouth of Sauron",
+		"unitType": "Ranged",
+		"movement": 4,
+		"range": 1,
+		"strength": 18,
+		"rangedStrength": 18,
+		"promotions": ["Will","Commander"],
+		"uniques": [
+			"Unbuildable",
+			"No movement cost to pillage"
+		]
+	},
+	/*
+	{
+		"name": "Nazgul-Fellbeast",
+		"unitType": "Mounted",
+		"uniqueTo": "Mordor",
+		"strength": 23,
+		"requiredResource": "Fellbeast",
+		"uniques": [
+			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+			"Bonus for units in 2 tile radius 15%",
+			"Will not be displayed in Civilopedia",
+			"Can move after attacking",
+			"Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Consumes [1] [Nazgul]",
+			"Ignores terrain cost",
+			"Not displayed as an available construction without [Block]"
+		],
+		"movement": 5,
+		"cost": 120
+	}*/
+]

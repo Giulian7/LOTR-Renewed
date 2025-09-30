@@ -1,0 +1,80 @@
+[
+//CIV LIKE
+	{
+		"name": "Civilian",
+		"movementType": "Land",
+		"uniques":[
+			"Can pass through impassable tiles"
+		]
+	},
+	{
+		"name": "Civilian Water",
+		"movementType": "Water"
+	},
+	{
+		"name": "Magical Object",
+		"movementType":"Land",
+		"uniques":[
+			"All tiles cost 1 movement",
+			"May enter foreign tiles without open borders",
+			"Cannot move"
+		]
+	},
+//LAND
+	{
+		"name": "Scout",
+		"movementType": "Land",
+		"uniques":[
+			"Can pass through impassable tiles"
+		]
+	},
+	{
+		"name": "Melee",
+		"movementType": "Land"
+	},
+	{
+		"name": "Ranged",
+		"movementType": "Land"
+	},
+	{
+		"name": "Mounted",
+		"movementType": "Land"
+	},
+	{
+		"name": "Armor",
+		"movementType": "Land"
+	},
+	{
+		"name": "Siege",
+		"movementType": "Land",
+		"uniques":["Destroys tile improvements when attacking"]
+	},
+//LAND SPECIAL - here defined for all extensions
+	{
+		"name":"Lizard",
+		"movementType":"Land"
+	},
+	{
+		"name":"Artrhopod",
+		"movementType":"Land"
+	},
+	{
+		"name":"Tree",
+		"movementType":"Land"
+	},
+//WATER
+	{
+		"name": "Melee Water",
+		"movementType": "Water",
+		"uniques": ["Can move after attacking"]		
+	},
+	{
+		"name": "Ranged Water",
+		"movementType": "Water"
+	},
+//AIR
+	{
+		"name":"Air",
+		"movementType":"Air"
+	}
+]

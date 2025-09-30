@@ -1,0 +1,75 @@
+/*
+You can add wonder images to mods and they'll be displayed instead of the standard icon when a wonder is finished. The image needs to be a .png and 2:1 ratio so for example 200x100 px.
+
+Add the images to /Images/WonderImages/. They need to be named according to the name field in Buildings.json, so for example "Temple of Artemis.png" or "Stonehenge.png"
+
+Remember, to be compatible with mobile devices, a fresh atlas needs to be generated including these.
+
+
+You will need to supply the graphics for new elements - a new unit needs its icon just as a new nation does. The rules are:
+
+The path and name of the image file need to conform to the rule: Image[.AtlasName]/Type-specific/Objectname.png (Type-specific means "TechIcons" for a Technology, "NationIcons" for a Nation and so on. See vanilla game folders. Objectname is the exact name as defined in json, before translation.)
+All path parts are case sensitive.
+Unit Pixel sprites and Tilesets follow special rules.
+Promotions can be named "[Unitname] ability". In such a case, if UnitIcons/Unitname.png exists it will fall back to that unit icon when UnitPromotionIcons/Unitname ability.png is missing.
+Promotions can be named "Something I" (or " II" or " III"). The suffix will be removed and painted as little stars, only the base UnitPromotionIcons/Something.png will be loaded.
+The special rules for promotions can be combined, e.g. "[Warrior] ability III" will fall back to the Warrior unit icon and paint 3 Stars on it.
+*/
+
+{
+    "useColorAsBaseTerrain": "false",
+		//"unexploredTileColor": {"r":1,"g":1,"b":1,"a":1}, //White
+		//"fogOfWarColor": {"r":0,"g":0,"b":0,"a":1}, //Black
+		"fallbackTileSet": "FantasyHex", //For get supply from FantasyHex
+    "ruleVariants": {
+		/*
+		"Forest+Lumber mill": ["Forest+Lumber mill"],
+	    "Plains+Forest+Lumber mill": ["Plains","Forest+Lumber mill"],
+	    "Plains+Forest": ["Plains","Forest"]
+		"Plains+Forest+Gems": ["Plains","Gems","Forest"]
+		*/
+		//Grassland
+		"Grassland+Forest+Honey":["Grassland", "GrasslandForest"],
+		"Grassland+Forest+Kingsfoil":["Grassland", "Kingsfoil", "GrasslandForest"],
+		"Grassland+Forest+Pipe-Weed":["Grassland", "Pipe-Weed", "GrasslandForest"],
+		"Grassland+Forest+Mallorn Grove":["Grassland", "Mallorn Grove"],
+		"Grassland+Deep Forest":["Grassland", "GrasslandDeepForest"],
+		"Grassland+Deep Forest+Kingsfoil":["Grassland", "Kingsfoil", "GrasslandDeepForest"],
+		"Grassland+Deep Forest+Pipe-Weed":["Grassland", "Pipe-Weed", "GrasslandDeepForest"],
+
+		"Grassland+Mallorn Grove":["Grassland", "Mallorn Grove"],
+		"Grassland+Farm":["Grassland+Farm"],
+		//"Grassland+Farmland":["Grassland+Farm"],
+
+		"Grassland+Farm+Cattle":["Grassland+Farm"],
+		"Grassland+Farm+Horses":["Grassland+Farm"],
+		"Grassland+Farm+Wheat":["Grassland+Farm"],
+
+		//Plains
+		"Plains+Forest+Honey":["Plains", "PlainsForest"],
+		"Plains+Forest+Mallorn Grove":["Plains", "Mallorn Grove"],
+		"Plains+Forest+Pipe-Weed":["Plains", "Pipe-Weed", "PlainsForest"],
+		"Plains+Deep Forest":["Plains", "PlainsDeepForest"],
+
+		"Plains+Mallorn Grove":["Plains", "Mallorn Grove"],
+
+		"Plains+Farm+Sheep":["Plains+Farm"],
+		"Plains+Farm+Wheat":["Plains+Farm"],
+
+		//Hill
+
+		"Hill+Forest+Niter":["Hill", "Niter", "Forest"],
+		"Hill+Forest+Mithril Ore":["Hill", "Mithril Ore", "Forest"],
+		
+
+		//Mountain
+
+		"Mountain+Desert Mountain":["Desert","Desert Mountain"],
+		"Mountain+Cold Mountain":["Cold Mountain"],
+		"Mountain+City center":["Mountain+City center"],
+
+		//WONDER
+
+		"Plains+The Lonely Mountain+River-BottomRight":["Plains", "The Lonely Mountain-RR"]
+	}
+}
