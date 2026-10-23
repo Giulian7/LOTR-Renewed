@@ -141,7 +141,7 @@
 			"Hill"
 		],
 		"production": 1,
-		"improvement": "Mine",
+		"improvedBy":["Mine","Settlement"],
 		"improvementStats": {
 			"production": 1
 		},
@@ -162,7 +162,7 @@
 			"Snow"
 		],
 		"production": 1,
-		"improvement": "Mine",
+		"improvedBy": ["Mine","Settlement"],
 		"improvementStats": {
 			"gold": 1
 		},
@@ -202,7 +202,7 @@
 		],
 		"science": 2,
 		"gold": 2,
-		"improvement": "Mine",
+		"improvedBy": ["Mine","Settlement"],
 		"improvementStats": {
 			"production": 2,
 			"gold": 2
@@ -210,8 +210,7 @@
 		"majorDepositAmount": { "sparse": 0, "default": 1, "abundant": 2 },
 		"minorDepositAmount": { "sparse": 0, "default": 1, "abundant": 1 },
 		"uniques":[
-			"Mined",
-			"Stockpiled"
+			"Mined"
 		]
 	},
 	{
@@ -268,8 +267,7 @@
 		"name": "Ithildin",
 		"resourceType": "Luxury",
 		"uniques":[
-			"Alloy",
-			"Stockpiled"
+			"Alloy"
 		]
 	},
 	{
@@ -629,6 +627,11 @@
 	},
 	{
 		"name":"Society II",
+		"resourceType":"Bonus",
+		"uniques":["Policy"]
+	},
+	{
+		"name":"Culture Trait",
 		"resourceType":"Bonus",
 		"uniques":["Policy"]
 	}

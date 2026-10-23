@@ -40,6 +40,7 @@
 		"uniqueText": "-25% Culture cost of acquiring tiles in all cities, -25% Gold cost of acquiring tiles in all cities.",
 		"uniques": [
 			"Men",
+			"Starts with [Human Culture] adopted",
 			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [98]% chance>",
 			"[-25]% Culture cost of natural border growth [in all cities]",
 			"[-25]% Gold cost of acquiring tiles [in all cities]"
@@ -93,9 +94,8 @@
 		"uniques":[
 			"Tile improvement speed +25%",
 			"Free [Worker] appears <upon discovering [Clay Manufacturing] technology>",
-
-			"Men",
-			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [98]% chance>"
+			"Starts with [Human Culture] adopted",
+			"Men"
 		],
 		"cities":[
 			"Minas Tirith",
@@ -156,7 +156,7 @@
 			"[+1] Movement <for [Mounted] units>",
 			"[+100]% [Horses] resource production",
 			"[+1 Food] from every [Horses]",
-
+			"Starts with [Human Culture] adopted",
 			"Men",
 			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [100]% chance>",
 			//"Free [Theoden] appears <upon entering the [Third Age]>"
@@ -211,7 +211,7 @@
 			//"Gain a free [Harad Training Grounds] [in all cities]",
 			"Men",
 			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [100]% chance>",
-			"Receive triple Gold from Barbarian encampments and pillaging Cities",
+			"Receive [+200]% Gold from Barbarian encampments and pillaging Cities",
 			"[+1 Production, +1 Food] from every [Ivory]",
 			"[+2 Culture] from every [Oasis]"
 		],
@@ -324,13 +324,12 @@
 		"uniqueName": "Back from the Journey",
 		"uniqueText": "+20% great person generation in all cities.\n+1 Culture and +1 Gold from every specialist.",
 		"uniques": [
+			"Elf",
 			"Starts with [Construction]",
 			"Starts with [Metallurgy]",
 			"[+20]% Great Person generation [in all cities]",
 			"[+1 Culture, +1 Gold] from every specialist [in all cities]",
 
-			"Starts with [Elven Culture] adopted",
-			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [97]% chance>",
 			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [2]% chance>",
 			"All newly-trained [Land] units [in all cities] receive the [Dwarf] promotion <with [1]% chance>"
 		],
@@ -384,8 +383,7 @@
 		"uniqueName": "Elven Grace",
 		"uniqueText": "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
 		"uniques": [
-			"Starts with [Elven Culture] adopted",
-			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [98]% chance>",
+			"Elf",
 			"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [1]% chance>",
 			"Starts with [Forestry]",
 			"Starts with [Wood Aesthetic] adopted"
@@ -434,11 +432,10 @@
 			138,
 			75
 		],
-		"uniqueName": "Elvess of the Forests",
+		"uniqueName": "Elves of the Forests",
 		"uniqueText": "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
 		"uniques": [
-			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [98]% chance>",
-			"Starts with [Elven Culture] adopted",
+			"Elf",
 			"Starts with [Forestry]",
 			"Starts with [Wood Aesthetic] adopted",
 			"All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."
@@ -484,11 +481,10 @@
 		"uniqueName": "Sons of Aule",
 		"uniqueText": "+1 Production and +1 Gold from Strategic resources. Double quantity of all mined resources.",
 		"uniques": [
-			"Starts with [Dwarven Culture] adopted",
-			"All newly-trained [Land] units [in all cities] receive the [Dwarf] promotion <with [99]% chance>",
+			"Dwarf",
 			"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [1]% chance>",
-			"[+1 Production] from every [Strategic resource]",
-			"[+1 Gold] from every [Strategic resource]",
+			"[+1 Production] from every [Strategic]",
+			"[+1 Gold] from every [Strategic]",
 			"Double quantity of [Mined] produced",
 			"Starts with [Mining]",
 			"Starts with [Monarchy] adopted"
@@ -879,6 +875,7 @@
 		],
 		"cities": [ "Grey Havens" ],
 		"uniques":[
+			"Elf",
 			"Gain a free [Harbor] [in capital] <upon discovering [Sailing] technology>"
 		]
 	},
@@ -925,6 +922,7 @@
 			"Wildmen Village"
 		],
 		"uniques":[
+			"Men"
 		]
 	},
 	{	"name": "Tol Morwen",
@@ -1108,6 +1106,9 @@
 		],
 		"cities": [
 			"Kingdom of Rhovanion"
+		],
+		"uniques": [
+			"Men"
 		]
 	},
 	{	"name": "Ephel Brandir",
@@ -1137,6 +1138,7 @@
 			"Ephel Brandir"
 		],
 		"uniques":[
+			"Men",
 			"[+1 Culture, +1 Gold, +1 Science] from each Trade Route",
 			"[+1 Production, +1 Food] <in [Forest] tiles>",
 			"All newly-trained [Land] units [in all cities] receive the [Ranger] promotion"

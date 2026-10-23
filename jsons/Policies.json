@@ -155,9 +155,8 @@
 				"name": "Elven Culture",
 				"uniques": [
 					"Comment [Unlocks Elven Traits]",
-					"Only available <before adopting [Men Culture]>",
-					"Only available <before adopting [Dwarven Culture]>",
-					"Only available <before adopting [Dark Culture]>"
+					"Provides [1] [Culture Trait]",
+					"Only available <without [Culture Trait]>"
 				],
 				"row": 2,
 				"column": 12
@@ -166,9 +165,8 @@
 				"name": "Dwarven Culture",
 				"uniques": [
 					"Comment [Unlocks Dwarven Traits]",
-					"Only available <before adopting [Men Culture]>",
-					"Only available <before adopting [Elven Culture]>",
-					"Only available <before adopting [Dark Culture]>"
+					"Provides [1] [Culture Trait]",
+					"Only available <without [Culture Trait]>"
 				],
 				"row": 2,
 				"column": 14
@@ -177,9 +175,8 @@
 				"name": "Men Culture",
 				"uniques": [
 					"Comment [Unlocks Human Traits]",
-					"Only available <before adopting [Dwarven Culture]>",
-					"Only available <before adopting [Elven Culture]>",
-					"Only available <before adopting [Dark Culture]>"
+					"Provides [1] [Culture Trait]",
+					"Only available <without [Culture Trait]>"
 				],
 				"row": 3,
 				"column": 12
@@ -188,9 +185,8 @@
 				"name": "Dark Culture",
 				"uniques": [
 					"Comment [Unlocks Black Side Traits]",
-					"Only available <before adopting [Men Culture]>",
-					"Only available <before adopting [Elven Culture]>",
-					"Only available <before adopting [Dwarven Culture]>",
+					"Provides [1] [Culture Trait]",
+					"Only available <without [Culture Trait]>",
 					"Cities are razed [3] times as fast"
 				],
 				"row": 3,

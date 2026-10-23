@@ -453,7 +453,7 @@
 		]
 	},
 	{
-		"name": "Medic",
+		"name": "Medic I",
 		"prerequisites": [
 			"Shock I",
 			"Drill I",
@@ -471,7 +471,7 @@
 	{
 		"name": "Medic II",
 		"prerequisites": [
-			"Medic"
+			"Medic I"
 		],
 		"uniques": [
 			"[+5] HP when healing <in [Foreign Land] tiles>",

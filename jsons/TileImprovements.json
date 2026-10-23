@@ -8,7 +8,7 @@
 		"uniques":[
 			"Does not need removal of [Deep Forest]",
 			"Does not need removal of [Forest]",
-			"Turn this tile into a [Corruption] tile <after turn number [2]>",
+			"Turn this tile into a [Corruption] tile",
 			"Unpillagable"
 		]
 	},
@@ -20,7 +20,7 @@
 		"turnsToBuild": 2,
 		"uniques":[
 			"Does not need removal of [Vegetation]",
-			"Turn this tile into a [Ash Wasteland] tile <after turn number [2]>",
+			"Turn this tile into a [Ash Wasteland] tile",
 			"Unpillagable",
 			"Can be built outside your borders"
 		]
@@ -170,46 +170,7 @@
 			"Only available <before adopting [Elven Culture]>",
 			"[+1 Production] <after discovering [Alloy]>",
 			"Pillaging this improvement yields approximately [+18 Gold]",
-
-			"Provides [1] [Stone] <for [100] turns>",
-			"Provides [1] [Stone] <every [2] turns> <after turn number [100]> <for [50] turns>",
-			"Provides [1] [Stone] <every [3] turns> <after turn number [150]>",
-
-			"Provides [1] [Iron] <for [100] turns> <in [Iron] tiles>",
-			"Provides [1] [Iron] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Iron] tiles>",
-			"Provides [1] [Iron] <every [3] turns> <after turn number [150]> <in [Iron] tiles>",
-
-			"Provides [1] [Copper] <for [100] turns> <in [Copper] tiles>",
-			"Provides [1] [Copper] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Copper] tiles>",
-			"Provides [1] [Copper] <every [3] turns> <after turn number [150]> <in [Copper] tiles>",
-
-			"Provides [1] [Niter] <for [100] turns> <in [Niter] tiles>",
-			"Provides [1] [Niter] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Niter] tiles>",
-			"Provides [1] [Niter] <every [3] turns> <after turn number [150]> <in [Niter] tiles>",
-
-			"Provides [1] [Mithril Ore] <for [100] turns> <in [Mithril Ore] tiles>",
-			"Provides [1] [Mithril Ore] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Mithril Ore] tiles>",
-			"Provides [1] [Mithril Ore] <every [3] turns> <after turn number [150]> <in [Mithril Ore] tiles>",
-
-			"Provides [1] [Coal] <for [100] turns> <in [Coal] tiles>",
-			"Provides [1] [Coal] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Coal] tiles>",
-			"Provides [1] [Coal] <every [3] turns> <after turn number [150]> <in [Coal] tiles>",
-
-			"Provides [1] [Gems] <for [100] turns> <in [Gems] tiles>",
-			"Provides [1] [Gems] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Gems] tiles>",
-			"Provides [1] [Gems] <every [3] turns> <after turn number [150]> <in [Gems] tiles>",
-
-			"Provides [1] [Gold Ore] <for [100] turns> <in [Gold Ore] tiles>",
-			"Provides [1] [Gold Ore] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Gold Ore] tiles>",
-			"Provides [1] [Gold Ore] <every [3] turns> <after turn number [150]> <in [Gold Ore] tiles>",
-
-			"Provides [1] [Silver] <for [100] turns> <in [Silver] tiles>",
-			"Provides [1] [Silver] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Silver] tiles>",
-			"Provides [1] [Silver] <every [3] turns> <after turn number [150]> <in [Silver] tiles>",
-
-			"Provides [1] [Salt] <for [100] turns> <in [Salt] tiles>",
-			"Provides [1] [Salt] <every [2] turns> <after turn number [100]> <for [50] turns> <in [Salt] tiles>",
-			"Provides [1] [Salt] <every [3] turns> <after turn number [150]> <in [Salt] tiles>"
+			"Provides [1] [Stone]"
 		],
 		"shortcutKey": "M"
 	},

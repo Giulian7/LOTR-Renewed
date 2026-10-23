@@ -60,7 +60,10 @@
 	},
 	{
 		"name":"Tree",
-		"movementType":"Land"
+		"movementType":"Land",
+		"uniques": [
+			"Double movement in [Vegetation]"
+		]
 	},
 //WATER
 	{

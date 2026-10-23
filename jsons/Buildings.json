@@ -40,7 +40,7 @@
 		"cost":50,
 		"uniques":[
 			"Only available <after adopting [Dwarven Culture]>",
-			"Doubles Gold given to enemy if city is captured",
+			"[+100]% Gold given to enemy if city is captured <in this city>",
 			"Never destroyed when the city is captured",
 			"Only available <if [Ring's Hall] is constructed>"
 		]

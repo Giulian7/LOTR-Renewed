@@ -59,7 +59,7 @@ You can search for a specific class of unit using capped unit type followed by S
         "movement": 2,
         "uniques": [
             "Religious Unit",
-			"Can [Spread Religion] [3] times",
+			"Can [Spread Religion] <[3] times><after which this unit is consumed>",
 			"Can be purchased for [100] [Faith] [in this city]",
 			"Unbuildable"
         ]
@@ -194,7 +194,7 @@ You can search for a specific class of unit using capped unit type followed by S
 		"cost": 35,
 		"uniques": [
 			"Only available <if [Pits of Utumno] is constructed>",
-			"Can build [Corruption] improvements on tiles",
+			"Can build [Corrupt] improvements on tiles",
 			"Invisible to non-adjacent units",
 			"Ignores terrain cost"
 		],
@@ -219,24 +219,39 @@ You can search for a specific class of unit using capped unit type followed by S
 	},
 	{
 		"name": "Ent",
-		"unitType": "Ranged",
-		"uniqueTo":"Tree-Man",
+		"unitType": "Tree",
 		"movement": 1,
 		"strength": 9,
 		"rangedStrength": 12,
 		"cost": 75,
 		"uniques": [
 			"Never appears as a Barbarian unit",
-			"Only available <if [Ent's Friendship] is constructed>",
-			"Double movement in [Vegetation]",
+			"Unavailable <if [Ent's Friendship] is not constructed><for [non-[Tree-Man]] Civilizations>",
 			"[+100]% Strength <vs cities>",
 			"No defensive terrain bonus",
-			"Can transform to [Ucorn] <starting from the [Second Age]>",
+			"Can transform to [Ucorn] <starting from the [Second Age]>"
 		],
 		"promotions":[
-			"Tree-Man"
+			"Tree-Man",
+			"March"
 		],
 		"attackSound": "throw"
+	},
+	{
+		"name": "Entess",
+		"unitType": "Tree",
+		"movement": 1,
+		"strength": 5,
+		"rangedStrength": 5,
+		"cost":75,
+		"promotions": [
+			"Tree-Man",
+			"Medic I",
+			"Medic II"
+		],
+		"uniques": [
+
+		]
 	},
 	{
 		"name":"Ucorn",
@@ -446,7 +461,7 @@ You can search for a specific class of unit using capped unit type followed by S
 			"[+10] HP when healing"
 		],
 		"promotions": [
-			"Medic"
+			"Medic I"
 		],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"

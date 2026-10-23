@@ -24,6 +24,12 @@
 		"[+1] Range <in [Watchtower] tiles><for [Ranged] units>",
 
 		"Starts with [The Great Culture Tree] adopted",
+		"Starts with [Human Culture] adopted<for [Men] Civilizations>",
+		"Starts with [Elven Culture] adopted<for [Elf] Civilizations>",
+		"Starts with [Dwarven Culture] adopted<for [Dwarf] Civilizations>",
+		"All newly-trained [Land] units [in all cities] receive the [Man] promotion <with [98]% chance><for [Men] Civilizations>",
+		"All newly-trained [Land] units [in all cities] receive the [Elf] promotion <with [98]% chance><for [Elf] Civilizations>",
+		"All newly-trained [Land] units [in all cities] receive the [Dwarf] promotion <with [98]% chance><for [Dwarf] Civilizations>",
 
 		//LOCAL FILTERING UNIQUEs
 		"Men",
