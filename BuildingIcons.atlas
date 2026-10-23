@@ -1,0 +1,328 @@
+
+BuildingIcons.png
+size: 2048, 1024
+format: RGBA8888
+filter: MipMapLinearLinear, Linear
+repeat: none
+BuildingIcons/1st Lightning Bolts
+  rotate: false
+  xy: 4, 794
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/2nd Lightning Bolts
+  rotate: false
+  xy: 4, 586
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/3rd Lightning Bolts
+  rotate: false
+  xy: 212, 794
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/4th Lightning Bolts
+  rotate: false
+  xy: 4, 378
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Amon Sul
+  rotate: false
+  xy: 4, 12
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Argonath
+  rotate: false
+  xy: 628, 428
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Barricade
+  rotate: false
+  xy: 212, 586
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Barrow
+  rotate: false
+  xy: 420, 794
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Black Ice Walls
+  rotate: false
+  xy: 4, 170
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Black Speech
+  rotate: false
+  xy: 1784, 736
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/Certhas-Angerthas Runes
+  rotate: false
+  xy: 836, 636
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Durin's Doors
+  rotate: false
+  xy: 212, 378
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Elostirion & the Tower Hills
+  rotate: false
+  xy: 1044, 844
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Feanorian Characters
+  rotate: false
+  xy: 162, 12
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Fortress
+  rotate: false
+  xy: 628, 270
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Furnace
+  rotate: false
+  xy: 420, 586
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Great University
+  rotate: false
+  xy: 636, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/Gwaith-i-Mirdain
+  rotate: false
+  xy: 1202, 844
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Gwaith-i-Mírdain
+  rotate: false
+  xy: 628, 794
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Harad Training Grounds
+  rotate: false
+  xy: 320, 12
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/High-Kingship
+  rotate: false
+  xy: 1360, 844
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Hobbit Lifestyle
+  rotate: false
+  xy: 1518, 844
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Khuzdul
+  rotate: false
+  xy: 1892, 736
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/Mearas Stable
+  rotate: false
+  xy: 212, 170
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Minas Anor
+  rotate: false
+  xy: 1676, 844
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Minas Ithil
+  rotate: false
+  xy: 1834, 844
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Minas Morgul
+  rotate: false
+  xy: 478, 12
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Mines
+  rotate: false
+  xy: 786, 428
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Monument
+  rotate: false
+  xy: 786, 270
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Noldorin
+  rotate: false
+  xy: 944, 212
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/Orkish
+  rotate: false
+  xy: 1152, 578
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/Orthanc
+  rotate: false
+  xy: 420, 378
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Pits of Utumno
+  rotate: false
+  xy: 628, 586
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Rohirric
+  rotate: false
+  xy: 1260, 578
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/Sauron's Eye
+  rotate: false
+  xy: 636, 112
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Sindarin
+  rotate: false
+  xy: 1368, 578
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/Slave Market
+  rotate: false
+  xy: 836, 794
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Stone Graves
+  rotate: false
+  xy: 994, 636
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Stone of Erech
+  rotate: false
+  xy: 944, 478
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Temple of Melian
+  rotate: false
+  xy: 944, 320
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/The Flame Imperishable
+  rotate: false
+  xy: 420, 170
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/The Rings
+  rotate: false
+  xy: 1152, 686
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/The Temple
+  rotate: false
+  xy: 1310, 686
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Treasure Hall
+  rotate: false
+  xy: 1468, 686
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Watchtowers
+  rotate: false
+  xy: 1626, 686
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+BuildingIcons/Westron
+  rotate: false
+  xy: 1476, 578
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1

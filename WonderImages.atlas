@@ -1,0 +1,41 @@
+
+WonderImages.png
+size: 2048, 1024
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+WonderImages/Argonath
+  rotate: false
+  xy: 4, 4
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+WonderImages/Durin's Doors
+  rotate: false
+  xy: 1546, 779
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+WonderImages/Elostirion & The Tower Hills
+  rotate: false
+  xy: 412, 4
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+WonderImages/Formenos
+  rotate: false
+  xy: 1546, 571
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+WonderImages/Menegroth
+  rotate: false
+  xy: 4, 212
+  size: 1534, 767
+  orig: 1534, 767
+  offset: 0, 0
+  index: -1
